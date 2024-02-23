@@ -1,0 +1,1858 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif; /* Specificeer het lettertype voor de hele website */
+    padding: 0;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    margin-right: 0;
+    padding: 25px;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border: 4px solid #e69d00;
+}
+
+
+.navbar a::after {
+    content: ""; /* Voeg een leeg content toe aan het pseudo-element */
+    position: absolute; /* Stel de positie in op absoluut om buiten het anchor-element te plaatsen */
+    bottom: -2px; /* Plaats het pseudo-element onder de tekst van de anchor */
+    left: 0; /* Zet de positie naar links uitgelijnd */
+    width: 100%; /* Maak de breedte 100% om onder de volledige breedte van de anchor te strekken */
+    height: 2px; /* Hoogte van de streep */
+    background-color: #FFBF00; /* Kleur van de streep */
+}
+
+
+.navbar a:hover {
+    color: #e69d00;
+}
+
+.navbar nav {
+    text-align: right;
+}
+
+.navbar ul {
+    list-style-type: none;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Voeg dit toe om de items naar een nieuwe regel te laten gaan als ze niet passen */
+}
+
+.navbar li {
+    margin-left: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #FFBF00;
+    font-weight: bold;
+    padding: 0; /* Padding verwijderen */
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    white-space: nowrap;
+    position: relative;
+}
+
+
+.navbar img {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* Responsive CSS voor schermen kleiner dan 768px */
+@media screen and (max-width: 768px) {
+    .navbar {
+        overflow: visible;
+    }
+
+    .navbar img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .navbar nav {
+        margin-top: 10px;
+        width: auto;
+        text-align: right;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+        padding-right: 5px;
+    }
+
+    
+    .navbar li {
+        margin: 0 5px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .navbar a:hover {
+        color: #83762b;
+    }
+    
+    /* Aanvullende stijlen specifiek voor iPhone SE */
+    @media screen and (max-width: 320px) {
+        .navbar a {
+            font-size: 12px;
+        }
+    }
+}
+
+#bannerimage {
+    width: 100%;
+    height: 250px;
+    background-image: url(images/vecteezy_eraser-of-pencil-rubbing-on-impossible-wording-to-possible_6932787.jpg);
+    background-size: cover; /* Hiermee wordt de achtergrondafbeelding volledig bedekt, en behoudt het de aspect ratio */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+
+.professionele-sectie {
+    background-color: #f5f5f5; /* Lichtgrijze achtergrondkleur */
+    font-family: 'Josefin Sans', sans-serif; /* Voeg het gewenste lettertype toe */
+    padding: 80px 0;
+}
+
+.custom-text-container {
+    max-width: 100%; /* Verander de maximale breedte naar 100% */
+    width: 100%; /* Voeg dit toe om ervoor te zorgen dat de container de volledige breedte inneemt */
+    margin: 0 auto;
+    text-align: center;
+    box-sizing: border-box; /* Voeg dit toe om ervoor te zorgen dat padding en borders binnen de breedte vallen */
+    padding: 20px; /* Voeg wat padding toe aan de container voor ruimte rondom de tekst */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.section-heading {
+    font-size: 48px; /* Grootte van de sectietitel vergroten */
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.section-heading::after {
+    content: ''; /* Voeg een pseudo-element toe om de onderlijn te maken */
+    display: block;
+    width: 40px; /* Breedte van de onderlijn */
+    height: 4px; /* Hoogte van de onderlijn */
+    background-color: #e69d00; /* Kleur van de onderlijn */
+    margin: 10px auto; /* Marge om het gecentreerd te houden */
+}
+.section-subtitle {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.custom-text-container {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Voeg afgeronde hoeken toe aan de tekstcontainer */
+}
+
+/* Optioneel: Voeg een media query toe om de flex-direction op kleine schermen te wijzigen */
+@media (max-width: 600px) {
+    #video-section, .video-container, .text-container {
+        width: 100%; /* Neem de volledige breedte van het scherm in op kleinere schermen */
+        margin-right: 0; /* Verwijder de rechtermarge op kleinere schermen */
+    }
+}
+
+
+
+#text-section-2 {
+    text-align: center;
+}
+
+#text-section-2 h2 {
+    font-size: 28px;
+    text-align: center;
+    color: #e69d00;
+    margin-bottom: 20px;
+}
+
+#text-section-2 .text-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#text-section-2 .text-container p {
+    font-size: 18px;
+    color: #555; 
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+#text-section {
+    text-align: center;
+    padding: 20px;
+}
+
+#text-section h1 {
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.content img.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+#video-section {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.video-container {
+    width: 100%; /* Maak de container 100% van de beschikbare ruimte */
+    max-width: 800px; /* Stel een maximale breedte in om te voorkomen dat de video te breed wordt op grote schermen */
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%; /* Laat de video de volledige breedte van de container innemen */
+    height: auto; /* Laat de hoogte van de video automatisch aanpassen om de aspectverhouding te behouden */
+}
+
+
+
+
+
+
+
+#causes-section {
+    background-color: #f8f8f8; /* Voeg hier een passende achtergrondkleur toe */
+    padding: 50px 0;
+}
+
+.professional-section .custom-text-container {
+    background-color: #ffffff; /* Witte achtergrondkleur van de tekstcontainer */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.professional-section .section-heading {
+    font-size: 36px;
+    color: #333; /* Voeg hier de gewenste tekstkleur toe */
+    margin-bottom: 15px;
+}
+
+.professional-section .section-subtitle {
+    font-size: 18px;
+    color: #666; /* Voeg hier de gewenste ondertitelkleur toe */
+    margin-bottom: 30px;
+}
+
+.professional-section .text-content p {
+    font-size: 16px;
+    color: #555; /* Voeg hier de gewenste tekstkleur toe */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.professional-section .text-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.professional-section .text-content li {
+    font-size: 16px;
+    color: #555; /* Voeg hier de gewenste tekstkleur toe */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.professional-section .text-content li img.icon {
+    width: 20px; /* Pas de breedte van het icoon aan aan je behoeften */
+    height: 20px; /* Pas de hoogte van het icoon aan aan je behoeften */
+    margin-right: 10px; /* Ruimte tussen het icoon en de tekst */
+}
+
+/* Aanvullende stijlen voor de impact-sectie */
+.impact-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.impact-item {
+    margin: 30px 0;
+}
+
+.impact-item h3 {
+    color: #4a3621;
+}
+
+
+
+.call-to-action {
+    font-style: italic;
+    font-weight: bold;
+    color: #4a3621;
+}
+
+/* Stijlen voor de call-to-action-knop */
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color:  #e69d00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+}
+
+
+
+#pricing-section {
+    background-color: #f4f4f4; /* Zachte achtergrondkleur */
+    padding: 80px 0;
+}
+
+.creative-section .custom-text-container {
+    background-color: #ffffff; /* Witte achtergrondkleur van de tekstcontainer */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.creative-section .section-heading {
+    font-size: 40px;
+    color: #333; /* Tekstkleur aanpassen */
+    margin-bottom: 15px;
+}
+
+.creative-section .section-subtitle {
+    font-size: 20px;
+    color: #666; /* Ondertitelkleur aanpassen */
+    margin-bottom: 30px;
+}
+
+.creative-section .text-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.creative-section .price-package {
+    background-color: #e69d00; /* Achtergrondkleur van prijspakket */
+    color: #fff; /* Tekstkleur van prijspakket */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.creative-section .price-tag {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.creative-section .currency {
+    font-size: 20px;
+}
+
+.creative-section .amount {
+    font-size: 36px;
+}
+
+.creative-section .package-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.creative-section .package-includes {
+    font-size: 18px;
+    color: #555; /* Tekstkleur aanpassen */
+    margin-top: 20px;
+}
+
+.creative-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.creative-section li {
+    font-size: 16px;
+    color: #555; /* Tekstkleur aanpassen */
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.creative-section .investment-info {
+    font-size: 16px;
+    color: #333; /* Tekstkleur aanpassen */
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.creative-section .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff; /* Tekstkleur aanpassen */
+    background-color: #e69d00; /* Achtergrondkleur van de knop */
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.creative-section .cta-button:hover {
+    background-color: #cc8000; /* Achtergrondkleur van de knop bij hover */
+}
+
+
+
+.creative-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.creative-section .custom-text-container {
+    background-color: #ffffff;
+}
+
+.creative-section .steps-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.creative-section .step {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    width: 300px;
+    cursor: pointer;
+    background: linear-gradient(45deg, #d3a409, #b9b9b9); /* Gradients voor een dynamisch effect */
+}
+
+.creative-section .step:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.creative-section .step img {
+    width: 100%;
+    height: auto;
+    max-width: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.3s; /* Voeg een subtiel zoomeffect toe bij hover */
+}
+
+.creative-section .step:hover img {
+    transform: scale(1.1);
+}
+
+.creative-section .step h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333; /* Donkere tekstkleur voor opvallendheid */
+}
+
+.creative-section .step p {
+    font-size: 16px;
+    color: #666; /* Grijze tekstkleur voor leesbaarheid */
+    line-height: 1.6;
+}
+
+.creative-section .step button {
+    background-color: #e69d00;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.creative-section .step button:hover {
+    background-color: #d08800;
+}
+
+.resultaat-sectie {
+    background-color: #f5f5f5; /* Zachte grijze achtergrond */
+    padding: 50px 0;
+}
+
+.resultaat-sectie .custom-text-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.resultaat-sectie .section-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.resultaat-sectie .result-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.resultaat-sectie .result-list li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd; /* Voeg een subtiele scheiding toe tussen de lijstitems */
+    padding-bottom: 10px;
+}
+
+.resultaat-sectie .result-list li:last-child {
+    border-bottom: none; /* Verwijder de scheiding van het laatste lijstitem */
+}
+
+#footer-section,
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif; /* Specificeer het lettertype voor de hele website */
+}
+
+.footer-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        padding: 10px; /* Pas de padding aan voor kleinere schermen */
+    }
+}
+
+.map-container {
+    width: 100%;
+    height: 400px; /* Adjust as needed */
+}
+
+.contact-info {
+    width: 100%; /* Neemt de volledige breedte in op kleinere schermen */
+    text-align: left;
+    padding: 10px; /* Verklein de padding verder */
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Verklein de onderste marge */
+    font-size: 16px; /* Pas de lettergrootte aan indien nodig */
+}
+
+@media only screen and (min-width: 768px) {
+    .contact-info {
+        width: calc(50% - 20px); /* 50% breedte minus padding voor grotere schermen */
+        margin-bottom: 20px; /* Herstel de onderste marge voor grotere schermen */
+    }
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center; /* Verticaal centreren */
+}
+.nav-links a {
+    text-decoration: none;
+    color: #FFBF00;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Overgangseffecten toevoegen */
+    border: 1px solid #e9e5e5;
+}
+
+.nav-links a:hover {
+    background-color: #fff;
+    color: #8E9CB0;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.follow-text {
+    font-size: 18px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Stel de stijl van je navbar in */
+
+.hero {
+    background-image: url('images/DSC_0416\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(30, 30, 30, 0.5), rgba(30, 30, 30, 0.5));
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2em;
+    z-index: 1;
+}
+
+/*Home section*/
+.hero2 {
+    background-image: url('images/HomePagina-IMG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #fff;
+    display: flex; /* Gebruik flexbox */
+    flex-direction: column; /* Zet de flexrichting op kolommen */
+    justify-content: center; /* Uitlijnen naar het midden van de verticale as */
+    align-items: flex-start; /* Uitlijnen aan de linkerkant */
+    padding: 100px; /* Voeg wat ruimte toe aan de container */
+    text-align: left; /* Tekst naar links uitlijnen */
+    position: relative;
+}
+
+/* Voeg een semi-transparante achtergrond toe aan de tekst en de knop */
+
+
+/* Mediaquery voor iPhone SE */
+@media only screen and (max-width: 320px) {
+    .hero2 {
+        background-size: cover; /* Pas de achtergrondgrootte aan om de afbeelding volledig in de container te passen */
+        padding: 20px; /* Pas de padding aan voor een betere weergave */
+    }
+}
+
+/* Mediaquery voor iPhone XR */
+@media only screen and (max-width: 414px) {
+    .hero2 {
+        background-size: cover; /* Pas de achtergrondgrootte aan om de afbeelding volledig in de container te passen */
+        padding: 30px; /* Pas de padding aan voor een betere weergave */
+    }
+}
+
+/* Mediaquery voor iPhone 14 Pro Max */
+@media only screen and (max-width: 428px) {
+    .hero2 {
+        background-size: cover; /* Pas de achtergrondgrootte aan om de afbeelding volledig in de container te passen */
+        padding: 40px; /* Pas de padding aan voor een betere weergave */
+    }
+}
+
+/* Mediaquery voor Pixel 7 */
+@media only screen and (max-width: 411px) {
+    .hero2 {
+        background-size: cover; /* Pas de achtergrondgrootte aan om de afbeelding volledig in de container te passen */
+        padding: 35px; /* Pas de padding aan voor een betere weergave */
+    }
+}
+
+/* Mediaquery voor Samsung Galaxy 8+ */
+@media only screen and (max-width: 360px) {
+    .hero2 {
+        background-size: cover; /* Pas de achtergrondgrootte aan om de afbeelding volledig in de container te passen */
+        padding: 30px; /* Pas de padding aan voor een betere weergave */
+    }
+}
+
+/* Mediaquery voor Samsung Galaxy S20 Ultra */
+@media only screen and (max-width: 500px) {
+    .hero2 {
+        background-size: cover; /* Pas de achtergrondgrootte aan om de afbeelding volledig in de container te passen */
+        padding: 45px; /* Pas de padding aan voor een betere weergave */
+    }
+}
+
+.hero2 h1,
+.hero2 p,
+.hero2 .cta-button {
+    margin: 10px 0; /* Voeg wat ruimte toe tussen de elementen */
+}
+
+.welcome-message {
+    position: relative;
+}
+
+.welcome-message:before {
+    content: '';
+    position: absolute;
+    left: 50%; /* Verplaats de streep naar het midden */
+    transform: translateX(-50%); /* Verschuif de streep terug met de helft van zijn eigen breedte om hem in het midden te plaatsen */
+    bottom: -5px; /* Verplaats de streep iets onder de tekst */
+    width: 50px;
+    height: 2px;
+    background-color: #e69d00;
+}
+
+
+.cta-button {
+    display: inline-block;
+    min-width: 180px; 
+    padding: 15px 60px 15px 40px;
+    background-color: #e69d00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.cta-button.home-button::after {
+    content: ''; /* Pseudo-element voor de raketafbeelding */
+    background-image: url('images/rocket.png'); /* Pad naar de afbeelding van de raket */
+    background-size: cover;
+    width: 40px; /* Breedte van de raketafbeelding */
+    height: 30px; /* Hoogte van de raketafbeelding */
+    position: absolute;
+    top: 50%; /* Plaats de afbeelding verticaal in het midden van de knop */
+    right: 20px; /* Afstand tussen de afbeelding en de rechterkant van de knop */
+    transform: translateY(-50%); /* Centreer de afbeelding verticaal */
+}
+
+
+.pulse{
+    animation: pulse-animation 1s infinite alternate; /* Definieer de pulsatie-animatie */
+}
+
+
+
+@keyframes pulse-animation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1); /* Vergroot de knop bij de piek van de pulsatie */
+    }
+}
+
+.hero2 h3{
+    color: #FFBF00;
+}
+.hero2 h1 {
+    color: #FFBF00; /* Verander deze waarde naar de gewenste tekstkleur */
+}
+
+.hero2 h2{
+    color: #ffffff;
+}
+.hero2 p {
+    color: #ffffff; /* Verander deze waarde naar de gewenste tekstkleur */
+}
+
+.specialized-section {
+    background-color: #f7f7f7; /* Achtergrondkleur van de sectie */
+    padding: 80px 0; /* Binnenafstand van de sectie aanpassen naar wens */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #fff; /* Achtergrondkleur van de box */
+    border-radius: 10px; /* Afgeronde hoeken voor de box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+    padding: 20px; /* Binnenafstand van de box aanpassen naar wens */
+}
+
+.section-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.section-content p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+.fear-section {
+    background-color: #8E9CB0;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-content {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 80%; /* Aangepaste breedte */
+    max-width: 600px; /* Aangepaste maximale breedte */
+    text-align: justify;
+    position: relative;
+    overflow: hidden; /* Voeg een overflow toe om eventuele afbeeldingen binnen de grenzen te houden */
+}
+
+.section-content::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(135deg, #e69d00 0%, #fff 70%); /* Creatieve achtergrond met lineaire gradiënt */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Zorg ervoor dat de achtergrond achter de inhoud ligt */
+}
+
+.section-content .section-heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Zorg ervoor dat de tekst boven de achtergrond ligt */
+}
+
+.section-content .section-heading::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 4px;
+    background-color: #e69d00;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-content .section-text {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    z-index: 1; /* Zorg ervoor dat de tekst boven de achtergrond ligt */
+}
+
+/* Voeg animatie toe voor een creatiever effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section-content::before {
+    animation: fadeIn 1s ease-out; /* Voeg animatie toe aan de achtergrond */
+}
+
+
+/* Algemene sectie stijlen */
+.specialized-section {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Help, ik ben bang sectie stijlen */
+.help-section {
+    position: relative;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/5515426.jpg'); /* Voeg hier het pad naar je achtergrondafbeelding toe */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Stel de doorzichtigheid van de achtergrond in */
+    z-index: -1; /* Plaats de achtergrond achter de inhoud */
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-box {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Maak de achtergrond van de box halfdoorzichtig */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.help-text h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: #e69d00;
+    margin: 10px auto; /* Aanpassen indien nodig */
+}
+
+
+
+.help-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.help-text {
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+.help-text h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.help-text p {
+    font-family: 'Josefin Sans', sans-serif; /* Voeg dit toe om hetzelfde lettertype toe te passen op de alinea's */
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff512f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #dd2476;
+}
+
+.coach-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coach-content {
+    text-align: center;
+}
+
+.coach-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.coach-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.coach-content p:before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #e69d00;
+    margin: 20px auto;
+}
+
+
+.coach-image img {
+    width: 30%; /* Pas de breedte aan naar jouw wens */
+    height: auto; /* Pas de hoogte aan naar jouw wens */
+    border-radius: 50%; /* Maakt de afbeelding rond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .coach-image img {
+        width: 70%; /* Pas de breedte aan naar jouw wens */
+        height: auto; /* Behoud de aspectverhouding */
+        border-radius: 50%; /* Maakt de afbeelding rond */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+.unique-section {
+    padding: 80px 0;
+}
+
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #d3ad32, #ffffff);
+}
+
+.text-block h2 {
+    font-size: 28px;
+    color: #776606;
+    margin-bottom: 20px;
+}
+
+.text-block p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Stijl voor de sectie */
+.section {
+    background: #f9f9f9; /* Achtergrondkleur van de sectie */
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 800px; /* Maximale breedte van de container */
+    margin: 0 auto; /* Centreren van de container */
+}
+
+/* Animatie voor de sectietitel */
+h2 {
+    font-size: 36px; /* Grootte van de sectietitel */
+    color: #333; /* Kleur van de sectietitel */
+    margin-bottom: 30px; /* Ondermarge van de sectietitel */
+    animation: fadeIn 1s ease-out; /* Fade-in animatie */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start met onzichtbaarheid */
+        transform: translateY(-20px); /* Beginpositie van de animatie */
+    }
+    to {
+        opacity: 1; /* Eindig met volledige zichtbaarheid */
+        transform: translateY(0); /* Eindpositie van de animatie */
+    }
+}
+
+p {
+    font-size: 18px; /* Grootte van de alinea's */
+    line-height: 1.6; /* Ruimere lijnhoogte */
+    color: #555; /* Donkere kleur voor de alinea's */
+    margin-bottom: 20px; /* Grotere ondermarge van de alinea's */
+}
+/* Stijl voor het formulier */
+form {
+    margin-top: 30px; /* Bovenmarge van het formulier */
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9; /* Achtergrondkleur van het formulier */
+    padding: 20px; /* Padding van het formulier */
+    border-radius: 10px; /* Randradius van het formulier */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schaduw van het formulier */
+}
+
+/* Stijl voor de labels van de vragen */
+form label {
+    font-size: 18px; /* Grootte van de labeltekst */
+    color: #181817;  /* Gouden kleur voor de labeltekst */
+    margin-top: 20px; /* Bovenmarge van de labels */
+}
+
+/* Stijl voor de selectievakjes */
+form select, form textarea, form input[type="text"], form input[type="email"] {
+    background-color: #fff; /* Achtergrondkleur van de invoervelden */
+    border: 1px solid #e69d00; /* Gouden rand van de invoervelden */
+    border-radius: 5px; /* Randradius van de invoervelden */
+    padding: 10px; /* Opvulling van de invoervelden */
+    font-size: 16px; /* Grootte van de tekst in de invoervelden */
+    margin-top: 5px; /* Bovenmarge van de invoervelden */
+    color: #333; /* Tekstkleur van de invoervelden */
+}
+
+/* Stijl voor de knop */
+form button {
+    background-color: #e69d00; /* Gouden achtergrondkleur van de knop */
+    color: #fff; /* Tekstkleur van de knop */
+    border: none; /* Geen rand rond de knop */
+    border-radius: 20px; /* Randradius van de knop */
+    padding: 12px 20px; /* Opvulling van de knop */
+    font-size: 18px; /* Grootte van de tekst in de knop */
+    margin-top: 20px; /* Bovenmarge van de knop */
+    cursor: pointer; /* Cursorstijl bij zweven over de knop */
+}
+
+/* Stijl voor de knop bij hover */
+form button:hover {
+    background-color: #c0c0c0; /* Gouden achtergrondkleur van de knop bij hover */
+}
+
+/* Stijl voor de over mij pagina */
+
+/* timeline.component.css */
+/* Definieer variabelen */
+:root {
+    --text-color: #373737;
+    --gray-base: #494949;
+    --gray-darker: #222;
+    --gray-dark: #333;
+    --gray: #555;
+    --gray-light: #777;
+    --gray-lighter: #eee;
+    --brand-primary: #1f9eba;
+    --brand-success: #59ba1f;
+    --brand-info: #5bc0de;
+    --brand-warning: #ffffff;
+    --brand-danger: #ba1f1f;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif; /* Specificeer het lettertype voor de hele website */
+}
+  
+  /* Timeline */
+  .timeline {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .timeline::before {
+    top: 40px;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+  
+  .timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .timeline-item::before,
+  .timeline-item::after {
+    content: "";
+    display: table;
+  }
+  
+  .timeline-item::after {
+    clear: both;
+  }
+  
+  .timeline-badge {
+    color: #fff;
+    width: 54px;
+    height: 54px;
+    line-height: 52px;
+    font-size: 22px;
+    text-align: center;
+    position: absolute;
+    top: 18px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #e69d00;
+    border: 3px solid #ffffff;
+    z-index: 100;
+    border-radius: 50%;
+  }
+  
+  .timeline-badge.primary {
+    background-color: var(--brand-primary);
+  }
+  
+  .timeline-badge.info {
+    background-color: var(--brand-info);
+  }
+  
+  .timeline-badge.success {
+    background-color: var(--brand-success);
+  }
+  
+  .timeline-badge.warning {
+    background-color: var(--brand-warning);
+  }
+  
+  .timeline-badge.danger {
+    background-color: var(--brand-danger);
+  }
+  
+  .timeline-panel {
+    position: relative;
+    text-align: right;
+    width: 46%;
+    float: left;
+    right: 16px;
+    background: #ffffff;
+    border-radius: 2px;
+    padding: 20px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+  
+  .timeline-panel::before {
+    position: absolute;
+    top: 26px;
+    right: -16px;
+    display: inline-block;
+    border-top: 16px solid transparent;
+    border-left: 16px solid var(--gray-light);
+    border-bottom: 16px solid transparent;
+  }
+  
+  .timeline-title {
+    margin-top: 0;
+    color: inherit;
+  }
+  
+  .timeline-body > p,
+  .timeline-body > ul {
+    margin-bottom: 0;
+  }
+  
+  
+
+  .timeline-body > p + p {
+    margin-top: 5px;
+  }
+  
+  /* Stijl laatste timeline-item */
+  .timeline-item:last-child {
+    &:nth-child(even) {
+      float: right;
+    }
+  }
+  
+  .timeline-item:nth-child(even) {
+    .timeline-panel {
+      float: right;
+      text-align: left;
+      left: 16px;
+    }
+  }
+
+ 
+
+  /* Stijl voor de sectie */
+section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+/* Stijl voor de container binnen de sectie */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.title {
+    color: #e69d00; /* Hier kun je een kleurcode, een kleurnaam of een RGB-waarde gebruiken */
+  }
+/* Stijl voor de koppen */
+h2 {
+    color: #e69d00;
+    font-size: 36px;
+    text-align: center; /* Centreren van de koppen */
+    margin-bottom: 30px;
+}
+
+/* Stijl voor de alinea's */
+p {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Stijl voor de knop */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Vloeiende overgang van de achtergrondkleur */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Verander achtergrondkleur bij hover */
+}
+
+/* Stijl voor de afbeelding */
+.img-fluid {
+    width: 100%; /* Stel de breedte van de afbeelding in op 100% */
+    height: 100vh; /* Hier wordt de hoogte ingesteld op 50% van de viewporthoogte */
+    object-fit: cover;
+    margin-bottom: 20px; /* Voeg een ruimte onder de afbeelding toe */
+}
+
+/* Stijl voor de titel */
+h1 {
+    font-size: 36px; /* Pas de grootte van de titel aan indien nodig */
+    font-weight: bold;
+    color: #333; /* Pas de kleur van de titel aan indien nodig */
+    margin-bottom: 30px; /* Voeg wat ruimte onder de titel toe */
+}
+
+
+/* Basisstijl voor de container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stijl voor de formulierinvoervelden */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Stijl voor de knop */
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #e69d00;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e69d00;
+}
+
+/* Stijl voor de container van de contacttekst */
+.contact-container {
+    background-color: #f9f9f9; /* Achtergrondkleur van de box */
+    border: 1px solid #ddd; /* Rand rondom de box */
+    border-radius: 10px; /* Afronding van de hoeken van de box */
+    padding: 20px; /* Binnenste vulling van de box */
+    margin-top: 30px; /* Ruimte boven de box */
+}
+
+/* Stijl voor de alinea met contacttekst */
+.contact-container p {
+    font-size: 16px; /* Tekstgrootte */
+    line-height: 1.6; /* Regelafstand */
+    color: #555; /* Tekstkleur */
+}
+
+/* Stijl voor de kopjes */
+.contact-container h3 {
+    font-size: 24px; /* Kopgrootte */
+    color: #333; /* Kleur van de kopjes */
+    margin-top: 20px; /* Ruimte boven de kopjes */
+}
+
+/* Stijl voor de socials */
+.contact-container .socials {
+    margin-top: 20px; /* Ruimte boven de social media pictogrammen */
+}
+
+.contact-container .socials a {
+    display: inline-block;
+    margin-right: 15px; /* Afstand tussen de social media pictogrammen */
+    color: #666; /* Kleur van de pictogrammen */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Vloeiende overgang bij hover */
+}
+
+.contact-container .socials a:hover {
+    color: #e69d00; /* Kleurverandering bij hover naar de hoofdkleur van de website */
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.location-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.location-option {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.location-option h2 {
+    color: #e69d00; /* Opvallende kleur voor de kop */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.location-option p {
+    color: #333; /* Donkere kleur voor de tekst */
+    font-size: 16px;
+    line-height: 1.6; /* Ruimte tussen regels */
+}
+
+.location-option ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Verwijder opsommingstekens */
+}
+
+.location-option li {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e69d00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e69d00;
+}
+
+.location-image {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+.cta-button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #e69d00;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #e69d00;
+}
+
+.location-option {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-option h2 {
+    color: #e69d00;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.location-option p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.location-option .video-frame {
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.location-option .video-frame video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e69d00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #d88c00;
+}
+
+.location-option p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 80%; /* Voeg een maximale breedte toe om de tekst beter te centreren */
+    margin: auto; /* Center de tekst */
+}
+
+.location-option .cta-button {
+    display: inline-block;
+    padding: 12px 24px; /* Vergroot de padding voor een meer opvallende knop */
+    background-color: #e69d00;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.location-option .cta-button:hover {
+    background-color: #d88c00; /* Donkerdere kleur bij hover voor visuele feedback */
+}
+
+@media (min-width: 768px) {
+    /* Pas de stijlen aan voor schermen met een breedte groter dan 768px */
+    .video-frame {
+        height: 550px; /* Verhoog de hoogte van de video-frame op grotere schermen */
+    }
+}
+
+.location-option ul {
+    text-align: left; /* Tekst links uitlijnen */
+    padding-left: 20px; /* Inspringing toevoegen aan de opsommingstekens */
+}
+
+
+/* Algemene opmaak */
+body {
+    background-color: #f9f9f9; /* Subtiele achtergrondkleur toevoegen */
+    font-family: Arial, sans-serif; /* Alternatief lettertype kiezen */
+}
+
+/* Algemene opmaak */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #e69d00;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #e69d00; /* Hier kun je een kleurcode, een kleurnaam of een RGB-waarde gebruiken */
+    
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.video-card {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Voeg een overgangseffect toe */
+    cursor: pointer; /* Verander de cursor naar een wijzer */
+}
+
+.video-card:hover {
+    transform: translateY(-5px); /* Maak een lichte opwaartse animatie bij het zweven */
+}
+
+.video-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.video-player {
+    width: 100%; /* Neem de volledige breedte van de video-container in */
+    height: auto; /* Behoud de aspectverhouding van de video */
+    display: block;
+    border-radius: 20px;
+    outline: none; /* Verwijder de focusomtrek */
+}
+
+/* Responsieve CSS */
+@media screen and (max-width: 768px) {
+    .video-card {
+        width: calc(50% - 40px); /* Verdeel de video's over twee kolommen */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .video-card {
+        width: calc(100% - 40px); /* Maak de video's op kleine schermen volledige breedte */
+    }
+}
+
+.ebook-link {
+    text-decoration: none; /* Verwijder onderstreping */
+    display: inline-block;
+    margin-top: 10px; /* Ruimte boven de link */
+    color: #e69d00;
+}
+
+.ebook-link span {
+    margin-right: 5px; /* Ruimte tussen tekst en pictogram */
+}
+
+.ebook-icon {
+    width: 20px; /* Breedte van het icoon */
+    vertical-align: middle; /* Lijn pictogram verticaal uit met de tekst */
+}
+
+.pdf-link {
+    margin-top: 20px; /* Voeg wat ruimte toe boven de link */
+    text-align: center;
+}
+
+.pdf-link a {
+    color: #e69d00; /* Verander de kleur van de link */
+    text-decoration: none; /* Verwijder onderstreepte tekstdecoratie */
+}
+
+.pdf-link a:hover {
+    text-decoration: underline; /* Onderstreep de link bij hover */
+}
+
+.madeby {
+    text-align: center;
+}
+
+.button {
+    color: #e69d00; /* Kleur van de tekst */
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Overgangseffect */
+}
+
+.button:hover {
+    transform: translateY(-5px); /* Beweeg de link omhoog bij hover */
+}
+
+.button:active {
+    transform: translateY(0); /* Reset positie bij klik */
+}
+
+.info-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.arrow-image img {
+    width: 50px; /* Pas de breedte van de afbeelding aan naar wens */
+}
