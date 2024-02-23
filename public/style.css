@@ -1856,3 +1856,41 @@ h2 {
 .arrow-image img {
     width: 50px; /* Pas de breedte van de afbeelding aan naar wens */
 }
+
+.blog-post {
+    margin-bottom: 40px; /* Extra ruimte onderaan de blogpost */
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.post-header {
+    background-color: #e69d00;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post-date {
+    font-size: 1.2em;
+}
+
+.blog-post-container {
+    padding: 20px;
+}
+
+.blog-post-container h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #e69d00;
+    margin-bottom: 10px; /* Extra ruimte onder de titel */
+}
+
+.blog-post-container p {
+    margin-bottom: 20px; /* Extra ruimte onder de alinea's */
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
