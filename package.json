@@ -1,0 +1,16 @@
+{
+  "name": "websitelp123",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://CoderFa2.github.io/websiteluca",
+  "dependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
