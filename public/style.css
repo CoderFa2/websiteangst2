@@ -726,7 +726,11 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-
+.bullet-point {
+    margin-right: 10px; /* Ruimte tussen de bulletpoint en de tekst */
+    font-size: 20px; /* Grootte van de bulletpoint */
+    line-height: 1; /* Zorg ervoor dat de bulletpoint op één regel blijft */
+}
 
 .cta-button {
     display: block;
