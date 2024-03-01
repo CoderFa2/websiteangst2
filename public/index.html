@@ -2,69 +2,69 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jouw Website</title>
+    <title>Responsive Navigation bar design usign html & css & javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="script.js" defer></script>
 </head>
 <body>
+    <header class="header-area">
+        <div class="header-container">
+            <div class="site-logo">
+                <a href="images/Tula_logo-1-scaled.jpg" width="140">
+                    <img src="images/Tula_logo-1-scaled.jpg" alt="Logo" width="100">
+                </a>
+            </div>
+            
+            <div class="mobile-nav">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="site-nav-menu">
+                <ul class="primary-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="over mij.html">Over mij</a></li>
+                    <li><a href="locatie.html">Locatie</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="hero-section">
+        <div class="hero hero2">
+            <h1 class="welcome-message">Bon Bini</h1>
+            <h3>Coachpraktijktula</h3>
+            <a href="contact.html" class="cta-button pulse home-button">Start Nu</a>
+        </div>
+    </section>
+    
 
-    <div class="navbar">
-          <img src="images/Tula_logo-1-scaled.jpg" width="140px" alt="Logo">
-        <!-- Voeg hier de URL van jouw logo toe -->
-        <!-- Voeg hier navigatie-items toe -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="over.html">Over</a></li>
-            <li><a href="diensten.html">Diensten</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-        </nav>
-    </div>
-    
-     
-    <div class="hero hero2">
-        <h1 class="welcome-message">Bon Bini
-        <h3>Coachpraktijktula</h3>
-        
-        <a href="contact.html" class="cta-button pulse home-button">
-            Start Nu
-        </a>
-    </div>
-    <!-- Rest van je HTML-code -->
-    
-    
-  <!-- Overwin je tandartsangst sectie -->
-<section id="tandartsangst-section" class="specialized-section">
-    
-    <div class="container">
+    <section id="tandartsangst-section" class="specialized-section">
         <div class="box">
             <h2 class="section-heading">Overwin je tandartsangst bij mijn gespecialiseerde coachpraktijk</h2>
             <p class="section-subtitle">Welkom bij mijn coachpraktijk, gespecialiseerd in het behandelen van tandartsangst! Ik begrijp hoe overweldigend het kan zijn om angst te voelen bij de gedachte aan een tandartsbezoek. Als ervaren coach ben ik er om je te begeleiden bij het overwinnen van uw angst, zodat je weer met een gerust hart naar de tandarts kunt gaan. Daarbij bied ik je de mogelijkheid om tijdens onze sessies te genieten van een ontspannende stoelmassage, zodat je helemaal tot rust kunt komen en optimaal kunt profiteren van mijn coachingsessies. Neem gerust contact met mij op om te bespreken hoe ik jou kan helpen bij het overwinnen van je tandartsangst.</p>
         </div>
-    </div>
-</section>
-
-<!-- Help, ik ben bang sectie -->
-<section class="help-section">
-    <div class="background-image"></div>
-    <div class="container">
+    </section>
+    
+    <section class="help-section">
+        <div class="background-image"></div>
         <div class="help-text">
             <h2>Help, ik ben bang</h2>
             <p>Ik merk dat er veel mensen bang zijn voor de tandarts, zowel volwassenen als kinderen. Als volwassenen worstel je met die gevoelens en zonder dat je het merkt of wenst draag je de angst over op je kind(eren). Soms bij de gedachte alleen al dat je halfjaarlijkse controle eraan zit te komen, voel je de spanning door je lichaam gieren en je merkt dat je bijvoorbeeld slechter slaapt of meer gaat transpireren.</p>
         </div>
-    </div>
-</section>
-
+    </section>
     
-<section class="help-section">
-    <div class="background-image"></div>
-    <div class="container">
+    <section class="help-section">
+        <div class="background-image"></div>
         <div class="help-box">
             <div class="help-text">
                 <h2>Herken je dat?</h2>
@@ -73,34 +73,30 @@
         </div>
         <div class="help-box">
             <div class="help-text">
-                <h2>De oplossing: Mijn A.N.G.S.T.-parcour</h2>
+                <h2>De oplossing:A.N.G.S.T. parcour</h2>
                 <p>Je bent dat geploeter zat, je gedachten gaan alle kanten op en je twijfels worden steeds groter. Je gelooft niet meer in de hulp die een tandarts je geven kan. Pfff, je denkt ‘’Er is geen oplossing meer voor mij, mijn gebit is al verloren.’’ Of je denkt ‘’Mijn vader, moeder, opa en oma hadden allemaal wolf in hun gebit, dus het zit gewoon in de familie.’’ Vind je het moeilijk om in actie te komen? Geef alsjeblieft niet op. Ik wil je graag helpen. Jouw winst is controle over je angst zodat ook jij een tandartsafspraak durft te maken en kan genieten van een gezond gebit in een gezond lichaam.</p>
                 <button id="show-all-videos-button" class="cta-button"><a href="angstparcour.html">Bekijk alle video's</a></button>
-
             </div>
         </div>
-    </div>
- 
-   
-</section>
+    </section>
+    
+       
+    </section>
 
-
+    <section class="coach-section">
+        <div class="container">
+            <div class="coach-image">
+                <img src="images/DSC_0563.jpg" alt="Coachpraktijk Tula">
+            </div>
+            <div class="coach-content">
+                <h2>Coachpraktijk Tula</h2>
+                <p>Wat onderscheidt mij van andere angstcoaches?</p>
+                <p>Ik ben uniek in wat ik doe. Als angstcoach heb ik ervoor gekozen om mij te verdiepen in jouw angst. Ik kan meevoelen met je pijn en tegelijkertijd ben ik in staat om met een helikopter view naar het probleem te kijken en alles in het juiste perspectief te plaatsen. Daarnaast werk ik al ruim 25 jaar in de tandheelkunde, waardoor ik goed weet hoe het er in een praktijk aan toe gaat.</p>
+            </div>
+        </div>
+    </section>
 
     
-<section class="coach-section">
-    <div class="container">
-        <div class="coach-image">
-            <img src="images/DSC_0563.jpg" alt="Coachpraktijk Tula">
-        </div>
-        <div class="coach-content">
-            <h2>Coachpraktijk Tula</h2>
-            <p>Wat onderscheidt mij van andere angstcoaches?</p>
-            <p>Ik ben uniek in wat ik doe. Als angstcoach heb ik ervoor gekozen om mij te verdiepen in jouw angst. Ik kan meevoelen met je pijn en tegelijkertijd ben ik in staat om met een helikopter view naar het probleem te kijken en alles in het juiste perspectief te plaatsen. Daarnaast werk ik al ruim 25 jaar in de tandheelkunde, waardoor ik goed weet hoe het er in een praktijk aan toe gaat.</p>
-        </div>
-    </div>
-</section>
-
-
 <section class="unique-section" id="respect">
     <div class="section-content">
         <div class="text-block respect">
@@ -135,22 +131,6 @@
             <h2>Vertrouwen</h2>
             <p>Vertrouwen is voor mij de basis van iedere relatie, dus ook de basis van een werkrelatie tussen jou en mij. Zonder vertrouwen kom je volgens mij niet verder en daarom wil ik graag werken aan het opbouwen van een vertrouwensband alvorens ik verder met jou aan de slag ga.</p>
         </div>
-    </div>
-</section>
-
-<section class="unique-section" id="respect">
-    <div class="section-content">
-        <div class="text-block respect">
-            <h2>Tijd</h2>
-            <p>Ik neem echt de tijd voor je en geef je mijn volle aandacht. Ik denk met je mee. Geen mens is hetzelfde, geen angst is hetzelfde. Daarom neem ik de tijd om samen met jou te onderzoeken wat bij je past. In mijn praktijk is tijd een waardevol instrument, waarmee we samen stapsgewijs kunnen werken aan het overwinnen van jouw tandartsangst.</p>
-    </div>
-</section>
-
-<section class="unique-section" id="respect">
-    <div class="section-content">
-        <div class="text-block respect">
-            <h2>Gelijkwaardigheid</h2>
-            <p>Gelijkwaardigheid zorgt voor een eerlijke relatie tussen jou en mij. Ik ben er niet om jou te vertellen wat je moet doen, maar wil graag samen met jou kijken hoe wij met elkaar het beste resultaat kunnen behalen. In onze samenwerking staan jouw behoeften centraal, en ik geloof sterk in de kracht van wederzijds begrip en samenwerking om angst te overwinnen.</p>
     </div>
 </section>
 
@@ -217,59 +197,93 @@
     </div>
 </section>
 
+<section class="unique-section" id="respect">
+    <div class="section-content">
+        <div class="text-block respect">
+            <h2>Gelijkwaardigheid</h2>
+            <p>Gelijkwaardigheid zorgt voor een eerlijke relatie tussen jou en mij. Ik ben er niet om jou te vertellen wat je moet doen, maar wil graag samen met jou kijken hoe wij met elkaar het beste resultaat kunnen behalen. In onze samenwerking staan jouw behoeften centraal, en ik geloof sterk in de kracht van wederzijds begrip en samenwerking om angst te overwinnen.</p>
+    </div>
+</section>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+    <script>
+$(document).ready(function(){
+  $(".mobile-nav i").click(function(){
+      $(".site-nav-menu").toggleClass("mobile-menu");
+  });
+});
 
-      
-<div class="map-container">
-    <!-- Plak hier de gegenereerde HTML-code van Google Maps -->
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d308376.2217326769!2d5.027113!3d52.854993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8b47638f759cf%3A0xd7c12add2218a118!2sLoggersplein%201%2C%201771%20CE%20Wieringerwerf%2C%20Nederland!5e0!3m2!1snl!2sus!4v1706962691431!5m2!1snl!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
+// Haal de huidige paginalocatie op
+var currentPage = window.location.pathname;
 
-<footer>
-    <section id="contact-section" class="container">
-        <div class="contact-info">
-            <h2>Contactgegevens</h2>
-            <p>Email: Coachpraktijktula@gmail.com</p>
-            <p>Telefoon: 06 27136222</p>
+// Selecteer alle menu-items
+var menuItems = document.querySelectorAll('.primary-menu li a');
 
-            <!-- Voeg hier de navigatielinks toe -->
-            <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="over.html">Over</a></li>
-            <li><a href="diensten.html">Diensten</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="location.html">Location</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            </ul>
-        </div>
-    </section>
+// Loop door alle menu-items
+menuItems.forEach(function(item) {
+    // Controleer of de href van het menu-item overeenkomt met de huidige paginalocatie
+    if (item.getAttribute('href') === currentPage) {
+        // Voeg de "active" klasse toe aan het overeenkomstige menu-item
+        item.classList.add('active');
+    } else {
+        // Verwijder de "active" klasse van alle andere menu-items
+        item.classList.remove('active');
+    }
+});
+    </script>
+    <script type="text/javascript" src="app.js"></script>
 
-    <section class="container">
-        <div class="footer-section">
-            <div class="footer-logo">Coachpraktijktula</div>
-        </div>
-        <div class="footer-section">
-            <div class="follow-text">Volg Coachpraktijktula</div>
-            <div class="social-icons">
-                <img src="images/LinkedIn-80x80.png" width="30">
-                <img src="images/Facebook-80x80.png" width="30">
-                <!-- Voeg hier je sociale media-pictogrammen toe -->
-            </div>
-        </div>
-    </section>
-
-    <div class="madeby">
-        <p>Gemaakt door <a href="https://webdevagency.nl/" target="_blank" class="button">Web Dev Agency</a></p>
+    <div class="map-container">
+        <!-- Plak hier de gegenereerde HTML-code van Google Maps -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d308376.2217326769!2d5.027113!3d52.854993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8b47638f759cf%3A0xd7c12add2218a118!2sLoggersplein%201%2C%201771%20CE%20Wieringerwerf%2C%20Nederland!5e0!3m2!1snl!2sus!4v1706962691431!5m2!1snl!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     
-    <!-- Link naar het PDF-bestand -->
-    <div class="pdf-link">
-        <p><a href="images/Algemene-Voorwaarden-Coachpraktijktula-9.4.23.pdf" target="_blank">Bekijk de
-             algemene voorwaarden</a></p>
-    </div>
-</footer>
-   
-
-
+    <footer>
+        <section id="contact-section" class="container">
+            <div class="contact-info">
+                <h2>Contactgegevens</h2>
+                <p>Email: Coachpraktijktula@gmail.com</p>
+                <p>Telefoon: 06 27136222</p>
+    
+                <!-- Voeg hier de navigatielinks toe -->
+                <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over.html">Over</a></li>
+                <li><a href="diensten.html">Diensten</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </section>
+    
+        <section class="container">
+            <div class="footer-section">
+                <div class="footer-logo">Coachpraktijktula</div>
+            </div>
+            <div class="footer-section">
+                <div class="follow-text">Volg Coachpraktijktula</div>
+                &nbsp;
+                <div class="social-icons">
+                    <img src="images/LinkedIn-80x80.png" width="30">
+                    <img src="images/Facebook-80x80.png" width="30">
+                    <!-- Voeg hier je sociale media-pictogrammen toe -->
+                </div>
+            </div>
+        </section>
+    
+        <div class="madeby">
+            <p>Gemaakt door <a href="https://webdevagency.nl/" target="_blank" class="button">Web Dev Agency</a></p>
+        </div>
+        
+        <!-- Link naar het PDF-bestand -->
+        <div class="pdf-link">
+            <p><a href="images/Algemene-Voorwaarden-Coachpraktijktula-9.4.23.pdf" target="_blank">Bekijk de
+                 algemene voorwaarden</a></p>
+        </div>
+    </footer>
+    
 </body>
 </html>
