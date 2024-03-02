@@ -1305,10 +1305,11 @@ p {
     bottom: -800px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
 /* Mediaquery voor kleinere schermen */
 @media screen and (max-width: 768px) {
-    bottom: -1800px; /* Pas de positie aan voor kleinere schermen */
+    bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
 }
 
 }
+
 
 .back-button a {
     text-decoration: none;
