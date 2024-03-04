@@ -415,6 +415,37 @@ section#hero-section {
     display: flex; /* Gebruik flexbox om de elementen naast elkaar te plaatsen */
     flex-wrap: wrap; /* Laat de flex-items op een nieuwe regel breken als er niet genoeg ruimte is */
 }
+#causes-section .section-heading {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+#causes-section .section-heading::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
+
+#custom-section .section-heading {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+#custom-section .section-heading::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
 
 @media screen and (max-width: 768px) {
     #custom-section {
@@ -465,6 +496,21 @@ section#hero-section {
     margin-bottom: 20px; /* Ruimte onder de koptekst */
 }
 
+#result-section .section-heading {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+#result-section .section-heading::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
 #result-section .result-list {
     list-style-type: none; /* Verwijder de opsommingstekens */
     padding: 0; /* Verwijder de standaard padding */
@@ -492,6 +538,21 @@ section#hero-section {
     overflow: hidden; /* Voorkomt dat eventuele afbeeldingen uit de sectie steken */
 }
 
+#pricing-section .section-heading {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+#pricing-section .section-heading::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
 #pricing-section .custom-text-container {
     padding: 20px; /* Ruimte rondom de tekstcontainer */
 }
@@ -1039,6 +1100,21 @@ p {
     justify-content: center;
 }
 
+#how-it-works-section .section-heading {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+#how-it-works-section .section-heading::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
 .creative-section .step {
     position: relative;
     overflow: hidden;
