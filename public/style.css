@@ -670,17 +670,22 @@ section#hero-section {
 }
 
 
-.specialized-section h2::after,
-.help-section h2::after {
+#tandartsangst-section .section-heading {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+#tandartsangst-section .section-heading::after {
     content: '';
-    position: absolute;
-    bottom: -10px; /* Plaats de lijn 10px onder de h2 */
-    left: 50%; /* Plaats het in het midden van de h2 */
-    transform: translateX(-50%); /* Centreer horizontaal */
-    width: 50px; /* Breedte van het streepje */
+    display: block;
+    width: 50px;
     height: 2px;
     background-color: #e69d00;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 
 /* Media query voor kleinere schermen */
@@ -710,21 +715,7 @@ section#hero-section {
         text-align: left; /* Paragrafen links uitlijnen op kleinere schermen */
     }
 
- /* Pseudo-element voor de streep onder de kopjes (h2) op kleinere schermen */
-.specialized-section h2::after {
-    left: 35%; /* Plaats het in het midden van de h2 */
-    transform: translateX(-50%); /* Centreer horizontaal */
-    bottom: -10px; /* Plaats de streep onder de h2 */
-    width: 50px; /* Breedte van het streepje aanpassen */
-}
 
-.help-section h2::after {
-    left: 20%; /* Plaats het in het midden van de h2 */
-    transform: translateX(-50%); /* Centreer horizontaal */
-    bottom: -10px; /* Plaats de streep onder de h2 */
-    width: 50px; /* Breedte van het streepje aanpassen */
-}
-}
 
 body {
     margin: 0;
@@ -1344,7 +1335,14 @@ p {
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
-
+/* Mediaquery voor kleinere schermen */
+@media only screen and (max-width: 768px) {
+    .help-section h2::after {
+        width: 50px; /* Pas de breedte aan voor kleinere schermen */
+        bottom: -8px; /* Pas de afstand tot de h2 aan voor kleinere schermen */
+        right: 60%; /* Pas de positie naar links aan voor kleinere schermen */
+    }
+}
 .help-section p {
     font-size: 1.1rem;
     line-height: 1.6;
