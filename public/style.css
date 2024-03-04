@@ -931,6 +931,7 @@ body {
     background: linear-gradient(45deg, #ffffff, #fafafa); /* Lineair verloop */
     color: #000000; /* Tekstkleur (zwart) */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor de randen */
+     margin-bottom: -100px; /* Aangepaste margin-bottom waarde */
 }
 
 
