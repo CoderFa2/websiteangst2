@@ -405,16 +405,6 @@ section#hero-section {
     width: 100%; /* Zorg ervoor dat de container de volledige breedte van de pagina inneemt */
 }
 
-#custom-section {
-    padding: 50px 20px; /* Ruimte rond de sectie met behoud van padding aan de zijkanten */
-    background-color: #f8f8f8; /* Neutrale achtergrondkleur */
-    max-width: 800px; /* Maximale breedte van de sectie */
-    margin: 20px auto; /* Automatisch uitlijnen in het midden */
-    border-radius: 10px; /* Afgeronde hoeken voor een zachtere uitstraling */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
-    display: flex; /* Gebruik flexbox om de elementen naast elkaar te plaatsen */
-    flex-wrap: wrap; /* Laat de flex-items op een nieuwe regel breken als er niet genoeg ruimte is */
-}
 #causes-section .section-heading {
     position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
 }
@@ -445,6 +435,17 @@ section#hero-section {
     bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
+
+#custom-section {
+    padding: 50px 20px; /* Ruimte rond de sectie met behoud van padding aan de zijkanten */
+    background-color: #f8f8f8; /* Neutrale achtergrondkleur */
+    max-width: 800px; /* Maximale breedte van de sectie */
+    margin: 20px auto; /* Automatisch uitlijnen in het midden */
+    border-radius: 10px; /* Afgeronde hoeken voor een zachtere uitstraling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
+    display: flex; /* Gebruik flexbox om de elementen naast elkaar te plaatsen */
+    flex-wrap: wrap; /* Laat de flex-items op een nieuwe regel breken als er niet genoeg ruimte is */
 }
 
 @media screen and (max-width: 768px) {
@@ -495,7 +496,6 @@ section#hero-section {
     color: #333; /* Donkere tekstkleur */
     margin-bottom: 20px; /* Ruimte onder de koptekst */
 }
-
 #result-section .section-heading {
     position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
 }
@@ -511,6 +511,7 @@ section#hero-section {
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
+
 #result-section .result-list {
     list-style-type: none; /* Verwijder de opsommingstekens */
     padding: 0; /* Verwijder de standaard padding */
@@ -537,7 +538,6 @@ section#hero-section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor diepte */
     overflow: hidden; /* Voorkomt dat eventuele afbeeldingen uit de sectie steken */
 }
-
 #pricing-section .section-heading {
     position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
 }
@@ -553,6 +553,7 @@ section#hero-section {
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
+
 #pricing-section .custom-text-container {
     padding: 20px; /* Ruimte rondom de tekstcontainer */
 }
@@ -715,7 +716,7 @@ section#hero-section {
         text-align: left; /* Paragrafen links uitlijnen op kleinere schermen */
     }
 
-
+}
 
 body {
     margin: 0;
@@ -778,11 +779,7 @@ body {
     border-radius: 10px;
     margin-bottom: 20px;
 }
-.bullet-point {
-    margin-right: 10px; /* Ruimte tussen de bulletpoint en de tekst */
-    font-size: 20px; /* Grootte van de bulletpoint */
-    line-height: 1; /* Zorg ervoor dat de bulletpoint op één regel blijft */
-}
+
 
 .cta-button {
     display: block;
@@ -797,53 +794,6 @@ body {
 
 .cta-button:hover {
     background-color: #e69d00;
-}
-.location-section h2 {
-    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
-}
-
-.location-section h2::after {
-    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
-    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 50px; /* Breedte van het pseudo-element */
-    height: 2px; /* Hoogte van het pseudo-element */
-    background-color: #e69d00; /* Gewenste kleur */
-    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
-    bottom: -3px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
-    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
-    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
-}
-
-.location-option h2 {
-    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
-}
-
-.location-option h2::after {
-    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
-    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 50px; /* Breedte van het pseudo-element */
-    height: 2px; /* Hoogte van het pseudo-element */
-    background-color: #e69d00; /* Gewenste kleur */
-    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
-    bottom: -3px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
-    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
-    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
-}
-
-.location-option h2 {
-    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
-}
-
-.location-option h2::after {
-    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
-    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 50px; /* Breedte van het pseudo-element */
-    height: 2px; /* Hoogte van het pseudo-element */
-    background-color: #e69d00; /* Gewenste kleur */
-    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
-    bottom: -3px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
-    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
-    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
 
 .location-option {
@@ -902,6 +852,60 @@ body {
 
 .cta-button:hover {
     background-color: #d88c00;
+}
+
+.bullet-point {
+    margin-right: 10px; /* Ruimte tussen de bulletpoint en de tekst */
+    font-size: 20px; /* Grootte van de bulletpoint */
+    line-height: 1; /* Zorg ervoor dat de bulletpoint op één regel blijft */
+}
+
+.location-section h2 {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+.location-section h2::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
+
+.location-option h2 {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+.location-option h2::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
+
+.location-option h2 {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+.location-option h2::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -3px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
 
 .location-option p {
@@ -1013,6 +1017,7 @@ body {
 
 .unique-section {
     padding: 80px 0;
+    
 }
 
 .section-content {
@@ -1021,6 +1026,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
 .text-block {
@@ -1030,7 +1036,7 @@ body {
     background: linear-gradient(45deg, #ffffff, #fafafa); /* Lineair verloop */
     color: #000000; /* Tekstkleur (zwart) */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor de randen */
-     margin-bottom: -100px; /* Aangepaste margin-bottom waarde */
+    margin-bottom: -100px; /* Aangepaste margin-bottom waarde */
 }
 
 
@@ -1089,22 +1095,6 @@ p {
 .about-me-section {
     text-align: center; /* Centreer de tekst */
 }
-.about-me-section h2 {
-    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
-}
-
-.about-me-section h2::after {
-    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
-    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 50px; /* Breedte van het pseudo-element */
-    height: 2px; /* Hoogte van het pseudo-element */
-    background-color: #e69d00; /* Gewenste kleur */
-    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
-    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
-    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
-    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
-}
-
 
 .banner-image {
     width: 100%; /* Zorg ervoor dat de container de volledige breedte van het scherm inneemt */
@@ -1169,6 +1159,8 @@ p {
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
+
+
 .creative-section .step {
     position: relative;
     overflow: hidden;
@@ -1232,6 +1224,22 @@ p {
     text-align: center; /* Centreer de tekst */
 }
 
+.about-me-section h2 {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+.about-me-section h2::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
+
 
 
 .container {
@@ -1293,12 +1301,6 @@ p {
     background-color: #f9f9f9;
     padding: 50px 0;
 }
-
-.help-section .container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
 .info-section h2 {
     position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
 }
@@ -1315,26 +1317,30 @@ p {
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
 
-.help-section h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
+.help-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
+
 .help-section h2 {
-    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+    position: relative;
+    text-align: center;
 }
 
 .help-section h2::after {
-    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
-    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 50px; /* Breedte van het pseudo-element */
-    height: 2px; /* Hoogte van het pseudo-element */
-    background-color: #e69d00; /* Gewenste kleur */
-    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
-    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
-    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
-    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #e69d00;
+    position: absolute;
+    bottom: -10px;
+    left: 0; /* Aanpassing: plaats het pseudo-element aan de linkerkant van de container */
+    right: 0; /* Aanpassing: strek het pseudo-element over de volledige breedte van de container */
+    margin: 0 auto; /* Aanpassing: centreer het pseudo-element horizontaal */
 }
+
 /* Mediaquery voor kleinere schermen */
 @media only screen and (max-width: 768px) {
     .help-section h2::after {
@@ -1343,6 +1349,20 @@ p {
         right: 60%; /* Pas de positie naar links aan voor kleinere schermen */
     }
 }
+.help-section .help-text {
+    margin-top: 20px; /* Voeg bovenmarge toe om ruimte te creëren tussen h2 en p */
+}
+
+.help-section .help-text p {
+    text-align: left; /* Zorg ervoor dat de tekst links wordt uitgelijnd */
+}
+
+.help-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
 .help-section p {
     font-size: 1.1rem;
     line-height: 1.6;
@@ -1411,6 +1431,7 @@ p {
     flex: 1;
     text-align: left;
 }
+
 #angst-parcours-section h2 {
     position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
 }
@@ -1472,6 +1493,7 @@ p {
     margin-bottom: 400px; 
     border-bottom: 1px solid #ddd; /* Toevoegen van een subtiele scheidingslijn tussen blogposts */
     padding-bottom: 20px; /* Ruimte onderaan elke blogpost */
+    
 }
 
 .blog-post h2 {
@@ -1507,6 +1529,7 @@ p {
 }
 
 }
+
 
 
 .back-button a {
