@@ -621,12 +621,12 @@ section#hero-section {
 .specialized-section,
 .help-section {
     padding: 50px 0;
-    margin-bottom: 50px; /* Voeg 50px margin toe onder elke sectie */
+    margin-bottom: 0px; /* Voeg 50px margin toe onder elke sectie */
     text-align: center;
 }
 
 .help-box {
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .help-text h2 {
