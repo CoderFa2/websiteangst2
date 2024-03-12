@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 
+
 body {
-    font-size: 14px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
 
 .heading {
     font-family: 'Lato', sans-serif;
@@ -53,7 +56,19 @@ body {
     margin: 21px 5px;
 }
 .primary-menu a {
-    color: #FFBF00; /* Gewijzigde kleur van de navigatielinks */
+    color: #e69d00;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Gewijzigde kleur van de navigatielinks */
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
@@ -64,14 +79,14 @@ body {
 }
 .primary-menu a:hover,
 .primary-menu .active {
-    color:#FFBF00; 
+    color:#e69d00;
 }
 .primary-menu li a:after {
     content: "";
     position: absolute;
     width: 0%;
     height: 2px;
-    background: #FFBF00;
+    background: #e69d00;
     bottom: 0px;
     left: 0;
     transition: all .5s;
@@ -225,6 +240,24 @@ section#hero-section {
     }
 }
 
+/* Verminder de onderste marge tussen secties */
+.rev-section,
+#text-section-2,
+#causes-section,
+#result-section,
+#pricing-section {
+    margin-bottom: 0; /* Verwijder de standaard onderste marge */
+}
+
+/* Voeg een kleine onderste marge toe aan alle secties behalve de laatste */
+.rev-section:not(:last-child),
+#text-section-2:not(:last-child),
+#causes-section:not(:last-child),
+#result-section:not(:last-child),
+#pricing-section:not(:last-child) {
+    margin-bottom: 20px; /* Pas de onderste marge aan naar jouw voorkeur */
+}
+
 #text-section-2 .custom-text-container {
     text-align: center;
    /* Center uitlijning van alle tekst */
@@ -252,6 +285,8 @@ section#hero-section {
     margin-left: auto; /* Automatische marge aan de linkerkant om de tekst in het midden te plaatsen */
     margin-right: auto; /* Automatische marge aan de rechterkant om de tekst in het midden te plaatsen */
     max-width: 800px; /* Optioneel: beperk de maximale breedte van de tekst voor een betere leesbaarheid */
+  
+    
 }
 
 
@@ -269,7 +304,7 @@ section#hero-section {
 }
 
 .section-subtitle {
-    color: #666; /* Lichtere tekstkleur voor ondertitel */
+    color: #333; /* Lichtere tekstkleur voor ondertitel */
     font-size: 24px; /* Grootte van de ondertitel aanpassen */
     margin-bottom: 30px; /* Ruimte onder de ondertitel */
 }
@@ -289,6 +324,9 @@ section#hero-section {
     color: #333; /* Donkere tekstkleur */
     font-size: 18px; /* Grootte van de tekst aanpassen */
     line-height: 1.6; /* Regelafstand voor betere leesbaarheid */
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen in het midden van de container */
+    margin-right: auto; /* Plaats de paragrafen in het midden van de container */
 }
 
 #text-section {
@@ -303,18 +341,79 @@ section#hero-section {
 }
 
 #text-section .content {
-    color: #666; /* Tekstkleur aanpassen */
+    color: #333; /* Tekstkleur aanpassen */
     font-size: 18px; /* Grootte van de tekst aanpassen */
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen aan de linkerkant van de container */
+    margin-right: auto; /* Plaats de paragrafen aan de rechterkant van de container */
 }
 
 #text-section .content ul {
-    list-style-type: none; /* Verwijder de opsommingstekens */
-    padding-left: 0; /* Verwijder de standaard inspringing */
+    list-style-type: none;
+    padding: 0;
 }
 
 #text-section .content li {
-    padding-left: 30px; /* Ruimte tussen de opsommingstekens en de tekst */
-    margin-bottom: 10px; /* Ruimte tussen de lijstitems */
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px; /* Voeg padding toe aan de linkerkant van de lijstitems */
+    margin-left: -15px; /* Verschuif de lijstitems naar links */
+}
+
+
+
+#text-section-2 .text-content ul li:before {
+    content: '\2022';
+    color: #e69d00;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%; /* Plaats de bulletpoints in het midden van het lijstitem */
+    transform: translateY(-50%); /* Centreer de bulletpoints verticaal */
+}
+
+#text-section .content li:nth-child(n+2) {
+    padding-left: 20px;
+}
+
+#text-section .content li:nth-child(3) {
+    padding-left: 20px;
+}
+
+.custom-button-container,
+.new-image-container {
+    margin-top: 20px; /* Ruimte boven de containers */
+    margin-left: 0; /* Reset de zijwaartse verschuiving naar 0 */
+    display: block; /* Zorg ervoor dat de containers als blokelementen worden weergegeven */
+}
+
+.custom-button-container {
+    margin-right: 15px; /* Voeg een rechtermarge toe om naar rechts te verschuiven */
+}
+
+.new-image-container {
+    margin-left: 25px; /* Voeg een linkermarge toe om naar rechts te verschuiven */
+    margin-top: 30px;
+}
+
+
+.custom-button-container .custom-button {
+    padding: 10px 20px; /* Binnenste vulling van de knop */
+    background-color: #e69d00; /* Achtergrondkleur van de knop */
+    color: #fff; /* Tekstkleur van de knop */
+    text-decoration: none; /* Verwijder onderstreping van de link */
+    border-radius: 5px; /* Afronding van de randen van de knop */
+    transition: background-color 0.3s ease; /* Voeg een overgangseffect toe */
+}
+
+.custom-button-container .custom-button:hover {
+    background-color: #ffbf00; /* Achtergrondkleur van de knop bij zweven */
+}
+
+.new-image-container img {
+    width: 40px; /* Breedte van de afbeelding */
+    height: auto; /* Automatische hoogte */
+    display: block; /* Zorg ervoor dat de afbeelding een blokelement wordt */
 }
 
 #text-section .info-text {
@@ -322,8 +421,10 @@ section#hero-section {
 }
 
 #text-section .arrow-image {
-    margin-top: 10px; /* Ruimte boven de pijlafbeelding */
+    margin-top: 40px; /* Ruimte boven de pijlafbeelding */
 }
+
+
 #text-section h2 {
     position: relative; /* Zorg ervoor dat de positie van het element relatief is */
 }
@@ -338,11 +439,14 @@ section#hero-section {
     height: 2px; /* Hoogte van het pseudo-element */
     background-color: #e69d00; /* Gewenste kleur */
 }
-
+.button-container {
+    margin-left: -15px; /* Verschuif de container van de knop naar links */
+}
 #causes-section {
     background-color: #f8f8f8; /* Neutrale achtergrondkleur */
     padding: 50px 0; /* Ruimte rond de sectie */
 }
+ 
 
 .custom-text-container {
     max-width: 800px; /* Maximale breedte van de inhoud */
@@ -390,6 +494,9 @@ section#hero-section {
     transform: translateY(-50%); /* Verplaats de bullet punt om verticaal gecentreerd te zijn */
 }
 
+
+
+
 #bannerimage {
     width: 100%;
     height: 250px;
@@ -404,6 +511,7 @@ section#hero-section {
 /* Stijlen voor #custom-section */
 .container {
     width: 100%; /* Zorg ervoor dat de container de volledige breedte van de pagina inneemt */
+
 }
 
 #causes-section .section-heading {
@@ -520,7 +628,7 @@ section#hero-section {
 
 #result-section .result-list li {
     font-size: 18px; /* Grootte van de tekst aanpassen */
-    color: #555; /* Tekstkleur aanpassen */
+    color: #333; /* Tekstkleur aanpassen */
     line-height: 1.6; /* Regelafstand voor betere leesbaarheid */
     margin-bottom: 15px; /* Ruimte tussen de lijstitems */
     border-bottom: 1px solid #ddd; /* Toevoegen van een subtiele scheiding tussen de lijstitems */
@@ -567,7 +675,7 @@ section#hero-section {
 
 #pricing-section .section-subtitle {
     font-size: 18px; /* Grootte van de subkop aanpassen */
-    color: #666; /* Tekstkleur aanpassen */
+    color: #333; /* Tekstkleur aanpassen */
     margin-bottom: 20px; /* Ruimte onder de subkop */
 }
 
@@ -578,7 +686,7 @@ section#hero-section {
 
 #pricing-section .package-description {
     font-size: 16px; /* Grootte van de pakketbeschrijving aanpassen */
-    color: #555; /* Tekstkleur aanpassen */
+    color: #333; /* Tekstkleur aanpassen */
     margin-bottom: 20px; /* Ruimte onder de pakketbeschrijving */
 }
 
@@ -590,7 +698,7 @@ section#hero-section {
 
 #pricing-section .investment-info {
     font-size: 16px; /* Grootte van de investeringsinformatie aanpassen */
-    color: #555; /* Tekstkleur aanpassen */
+    color: #333; /* Tekstkleur aanpassen */
     margin-bottom: 20px; /* Ruimte onder de investeringsinformatie */
 }
 
@@ -637,8 +745,11 @@ section#hero-section {
 
 .help-text p {
     font-size: 18px;
-    color: #666;
+    color: #333;
     line-height: 1.6;
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen in het midden van de container */
+    margin-right: auto; /* Plaats de paragrafen in het midden van de container */
 }
 
 .cta-button {
@@ -671,6 +782,14 @@ section#hero-section {
     margin-bottom: 20px;
 }
 
+.specialized-section p {
+    font-size: 18px;
+    color: #333;
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen in het midden van de container */
+    margin-right: auto; /* Plaats de paragrafen in het midden van de container */
+}
+
 
 #tandartsangst-section .section-heading {
     position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
@@ -679,7 +798,7 @@ section#hero-section {
 #tandartsangst-section .section-heading::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 100px;
     height: 2px;
     background-color: #e69d00;
     position: absolute;
@@ -687,8 +806,6 @@ section#hero-section {
     left: 50%;
     transform: translateX(-50%);
 }
-
-
 
 /* Media query voor kleinere schermen */
 @media screen and (max-width: 768px) {
@@ -706,7 +823,7 @@ section#hero-section {
     
     .specialized-section .box h2,
     .help-section .help-text h2 {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 10px;
         text-align: left; /* Titel links uitlijnen op kleinere schermen */
     }
@@ -716,7 +833,22 @@ section#hero-section {
         margin-bottom: 15px;
         text-align: left; /* Paragrafen links uitlijnen op kleinere schermen */
     }
-
+    #tandartsangst-section .section-heading {
+        position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+    }
+    
+    #tandartsangst-section .section-heading::after {
+        content: '';
+        display: block;
+        width: 70px;
+        height: 2px;
+        background-color: #e69d00;
+        position: absolute;
+        bottom: -10px;
+        left: 30%;
+        transform: translateX(-50%);
+    }
+    
 }
 
 body {
@@ -750,6 +882,9 @@ body {
     color: #333; /* Donkere kleur voor de tekst */
     font-size: 16px;
     line-height: 1.6; /* Ruimte tussen regels */
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen aan de linkerkant van de container */
+    margin-right: auto; /* Plaats de paragrafen aan de rechterkant van de container */
 }
 
 .location-option ul {
@@ -817,11 +952,14 @@ body {
 
 
 .location-option p {
-    color: #555;
+    color: #333;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     margin-bottom: 20px;
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen aan de linkerkant van de container */
+    margin-right: auto; /* Plaats de paragrafen aan de rechterkant van de container */
 }
 
 .location-option .video-frame {
@@ -910,7 +1048,7 @@ body {
 }
 
 .location-option p {
-    color: #555;
+    color: #333;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
@@ -956,8 +1094,18 @@ body {
     margin-right: 10px; /* Ruimte tussen de bulletpoint en de tekst */
     font-size: 20px; /* Grootte van de bulletpoint */
     line-height: 1; /* Zorg ervoor dat de bulletpoint op één regel blijft */
+    color: #e69d00;;
 }
 
+.coach-section,
+.unique-section {
+    margin-bottom: 20px; /* Voeg een kleine onderste marge toe aan beide secties */
+}
+
+.coach-content,
+.text-block {
+    margin-bottom: 0; /* Verwijder de onderste marge van de inhoud binnen de secties */
+}
 
 .coach-section {
     padding: 50px 0;
@@ -984,23 +1132,27 @@ body {
 }
 
 .coach-content p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
+    font-size: 18px;
+    color: #333;
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen in het midden van de container */
+    margin-right: auto; /* Plaats de paragrafen in het midden van de container */
 }
 
-.coach-content p:before {
+.coach-content h2::before {
     content: "";
     display: block;
-    width: 40px;
-    height: 2px;
-    background-color: #e69d00;
-    margin: 20px auto;
+    width: 50px; /* Breedte van de streepjes */
+    height: 2px; /* Hoogte van de streepjes */
+    background-color: #e69d00; /* Kleur van de streepjes */
+    margin: 20px auto; /* Marge boven en onder, automatische marge aan de zijkanten */
 }
+
+
 
 
 .coach-image img {
-    width: 30%; /* Pas de breedte aan naar jouw wens */
+    width: 40%; /* Pas de breedte aan naar jouw wens */
     height: auto; /* Pas de hoogte aan naar jouw wens */
     border-radius: 50%; /* Maakt de afbeelding rond */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1008,17 +1160,18 @@ body {
 
 @media (max-width: 768px) {
     .coach-image img {
-        width: 70%; /* Pas de breedte aan naar jouw wens */
+        width: 100%; /* Pas de breedte aan naar jouw wens */
         height: auto; /* Behoud de aspectverhouding */
         border-radius: 50%; /* Maakt de afbeelding rond */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 }
 
-
-.unique-section {
+.unique-section,
+.section {
     padding: 80px 0;
-    
+    margin-top: 0; /* Verwijder de bovenmarge van beide secties */
+    margin-bottom: 0; /* Voeg een kleine onderste marge toe aan beide secties */
 }
 
 .section-content {
@@ -1027,8 +1180,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
+
+
 
 .text-block {
     padding: 30px;
@@ -1037,8 +1191,40 @@ body {
     background: linear-gradient(45deg, #ffffff, #fafafa); /* Lineair verloop */
     color: #000000; /* Tekstkleur (zwart) */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtiele schaduw voor de randen */
-    margin-bottom: -100px; /* Aangepaste margin-bottom waarde */
+    margin-bottom: -120px; /* Aangepaste margin-bottom waarde */
 }
+
+#kernwaarden h2 {
+    font-size: 28px;
+    color: #776606;
+    margin-top: -40px;
+    margin-bottom: -45px;
+    text-align: center;
+}
+.section-content .section-heading {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+.section-content .section-heading::after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: #e69d00;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.unique-section,
+.section {
+    padding: 40px 0; /* Verklein de padding boven en onder */
+    margin-top: 0; /* Verwijder de bovenmarge van beide secties */
+    margin-bottom: 20px; /* Voeg een kleine onderste marge toe aan beide secties */
+}
+
 
 
 .text-block h2 {
@@ -1049,21 +1235,11 @@ body {
 
 .text-block p {
     font-size: 16px;
-    color: #666;
+    color: #333;
     line-height: 1.6;
 }
 
 
-/* Stijl voor de sectie */
-.section {
-    background: #f9f9f9; /* Achtergrondkleur van de sectie */
-    padding: 80px 0;
-}
-
-.container {
-    max-width: 800px; /* Maximale breedte van de container */
-    margin: 0 auto; /* Centreren van de container */
-}
 
 /* Animatie voor de sectietitel */
 h2 {
@@ -1087,28 +1263,12 @@ h2 {
 p {
     font-size: 18px; /* Grootte van de alinea's */
     line-height: 1.6; /* Ruimere lijnhoogte */
-    color: #555; /* Donkere kleur voor de alinea's */
+    color: #333; /* Donkere kleur voor de alinea's */
     margin-bottom: 20px; /* Grotere ondermarge van de alinea's */
 }
 
 
 
-.about-me-section {
-    text-align: center; /* Centreer de tekst */
-}
-
-.banner-image {
-    width: 100%; /* Zorg ervoor dat de container de volledige breedte van het scherm inneemt */
-}
-
-.banner-image img {
-    width: 100%; /* Zorg ervoor dat de afbeelding de volledige breedte van zijn container inneemt */
-    height: auto; /* Behoud de aspectverhouding van de afbeelding */
-    max-height: 700px; /* Stel een maximale hoogte in voor de afbeelding */
-    object-fit: cover; /* Bedek de container volledig met de afbeelding */
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 
 
 .container {
@@ -1124,7 +1284,7 @@ h2 {
 p {
     font-size: 1.1rem; /* Grootte van de paragrafen */
     line-height: 1.6; /* Regelhoogte voor gemakkelijke leesbaarheid */
-    color: #666; /* Kleur van de tekst */
+    color: #333; /* Kleur van de tekst */
 }
 
 
@@ -1197,12 +1357,12 @@ p {
 .creative-section .step h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: #333; /* Donkere tekstkleur voor opvallendheid */
+   color:  #776606;
 }
 
 .creative-section .step p {
     font-size: 16px;
-    color: #666; /* Grijze tekstkleur voor leesbaarheid */
+    color: #333; /* Grijze tekstkleur voor leesbaarheid */
     line-height: 1.6;
 }
 
@@ -1243,28 +1403,48 @@ p {
 
 
 
+
 .container {
     max-width: 800px; /* Beperk de maximale breedte van de tekstcontainer */
-    margin: 0 auto; /* Centreer de tekstcontainer op de pagina */
+    margin: 0 auto;
 }
 
 h2 {
     font-size: 2.5rem; /* Grootte van de kop */
     color: #333; /* Kleur van de kop */
 }
-
 p {
     font-size: 1.1rem; /* Grootte van de paragrafen */
     line-height: 1.6; /* Regelhoogte voor gemakkelijke leesbaarheid */
-    color: #666; /* Kleur van de tekst */
+    color: #333; /* Kleur van de tekst */
+}
+
+.tula-section .container {
+    margin-top: 0; /* Verwijder de bovenste marge van de container */
+}
+
+
+.banner-image {
+    margin-top: -50px; /* Verwijder de bovenste marge van de banner-image */
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    max-height: 430px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 
 .tula-section {
+    margin-top: 0;
     background-color: #f9f9f9;
-    padding: 50px 0;
+    padding: 50px 0 0;
+    margin-bottom: -90px;
 }
 .tula-section h2 {
+    margin-top: 0;
     position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
 }
 
@@ -1281,11 +1461,18 @@ p {
 }
 
 .tula-section .container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Beperk de maximale breedte van alle containers */
+    margin: 0 auto; /* Centreer alle containers op de pagina */
+    margin-bottom: -100px; /* Pas de onderste marge van alle containers aan */
 }
 
+.info-section {
+    margin-top: 50px; /* Verplaats de info-section naar beneden */
+}
+
+
 .tula-section h2 {
+    
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
@@ -1294,7 +1481,7 @@ p {
 .tula-section p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #666;
+    color: #333;
     margin-bottom: 15px;
 }
 
@@ -1367,7 +1554,7 @@ p {
 .help-section p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #666;
+    color: #333;
     margin-bottom: 15px;
 }
 
@@ -1382,6 +1569,7 @@ p {
 
 .button-container {
     margin-top: 20px;
+    margin-left: -15px;
 }
 
 .button {
@@ -1392,12 +1580,12 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-bottom: 30px;
 }
 
 .button:hover {
     background-color: #e69d00;
 }
-
 .infographic-section {
     padding: 50px 0;
     text-align: center;
@@ -1416,7 +1604,7 @@ p {
 
 .infographic-section p {
     font-size: 1.1rem;
-    color: #666;
+    color: #333;
     line-height: 1.6;
     margin-bottom: 20px;
 }
@@ -1481,23 +1669,18 @@ p {
 
 
 
-/* Blogpagina algemene opmaak */
 .blog-posts {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
 }
-
-/* Stijl voor individuele blogposts */
 .blog-post {
-   
-    margin-bottom: 400px; 
+    margin-bottom: 380px; /* Pas de onderste marge aan om de ruimte tussen blogposts te bepalen */
     border-bottom: 1px solid #ddd; /* Toevoegen van een subtiele scheidingslijn tussen blogposts */
     padding-bottom: 20px; /* Ruimte onderaan elke blogpost */
-    
 }
 
-.blog-post h2 {
+.blog-post h3 {
     font-size: 24px;
     margin-bottom: 10px;
     color: #333; /* Kleur van de blogposttitel */
@@ -1506,27 +1689,58 @@ p {
 .blog-post p {
     font-size: 16px;
     line-height: 1.6;
-    color: #666;
+    color: #333;
+    margin-bottom: 15px;
 }
 
+.scroll-to-top img {
+    width: 35px; /* Pas de breedte van de afbeelding aan */
+    height: auto; /* Behoud de aspectverhouding */
+    margin-left: 5px; /* Ruimte tussen tekst en afbeelding */
+}
+
+/* Stijl voor de datum van de blogpost */
+.post-date {
+    font-size: 14px;
+    color: #999;
+}
+
+/* Stijl voor de links binnen de blogpost */
 .blog-post a {
     text-decoration: none;
     color: #e69d00;
     transition: color 0.3s ease; /* Vloeiende overgang voor de kleur van de link */
 }
 
-
-
 .blog-post a:hover {
     color: #d88c00; /* Kleur van de link bij hover */
 }
 
+.tula-section h3 {
+    position: relative; /* Zorg ervoor dat de positie van de h3 relatief is */
+}
+
+.tula-section h3::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 50px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -10px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h3 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h3 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
+
+
 .back-button {
-    position: absolute;
-    bottom: -800px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
+    position:absolute;
+    left: 40%;
+    bottom: -1100px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
 /* Mediaquery voor kleinere schermen */
 @media screen and (max-width: 768px) {
     bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
+    left: 30%;
 }
 
 }
@@ -1603,7 +1817,7 @@ p {
 }
 .nav-links a {
     text-decoration: none;
-    color: #FFBF00;
+    color: #e69d00;
     padding: 5px 10px;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Overgangseffecten toevoegen */
 }
@@ -1641,7 +1855,7 @@ p {
 }
 
 .ebook-icon {
-    width: 20px; /* Breedte van het icoon */
+    width: 30px; /* Breedte van het icoon */
     vertical-align: middle; /* Lijn pictogram verticaal uit met de tekst */
 }
 
@@ -1717,7 +1931,7 @@ button[type="submit"]:hover {
 .contact-container p {
     font-size: 16px; /* Tekstgrootte */
     line-height: 1.6; /* Regelafstand */
-    color: #555; /* Tekstkleur */
+    color: #333; /* Tekstkleur */
 }
 
 /* Stijl voor de kopjes */
@@ -1743,10 +1957,47 @@ button[type="submit"]:hover {
 .contact-container .socials a:hover {
     color: #e69d00; /* Kleurverandering bij hover naar de hoofdkleur van de website */
 }
+/* Stijl voor de paragraaf */
+#contact p {
+    margin-bottom: 10px; /* Minder ruimte onder de paragraaf */
+}
 
 /* Stijl voor het formulier */
+#contact form {
+    margin-top: 10px; /* Minder ruimte boven het formulier */
+}
+
+
+/* Stijl voor het formulier */
+#contact h2 {
+    position: relative; /* Zorg ervoor dat de positie van de h2 relatief is */
+}
+
+#contact h2::after {
+    content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
+    display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
+    width: 100px; /* Breedte van het pseudo-element */
+    height: 2px; /* Hoogte van het pseudo-element */
+    background-color: #e69d00; /* Gewenste kleur */
+    position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
+    bottom: -20px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
+    transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
+}
+
+.container h2 {
+    font-size: 25px; /* Pas de grootte van de h2 aan */
+    margin-top: 15px;
+}
+
+.container p {
+    font-size: 16px; /* Pas de grootte van de alinea's aan */
+    max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
+    margin-left: auto; /* Plaats de paragrafen in het midden van de container */
+    margin-right: auto; /* Plaats de paragrafen in het midden van de container */
+}
 form {
-    margin-top: 30px; /* Bovenmarge van het formulier */
+    margin-top: 50px; /* Bovenmarge van het formulier */
     display: flex;
     flex-direction: column;
     background-color: #f9f9f9; /* Achtergrondkleur van het formulier */
@@ -1758,8 +2009,24 @@ form {
 /* Stijl voor de labels van de vragen */
 form label {
     font-size: 18px; /* Grootte van de labeltekst */
-    color: #181817;  /* Gouden kleur voor de labeltekst */
+    color: #333;  /* Gouden kleur voor de labeltekst */
     margin-top: 20px; /* Bovenmarge van de labels */
+}
+
+#contact-formulier h2 {
+    position: relative;
+}
+
+#contact-formulier h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background-color: #e69d00;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Stijl voor de selectievakjes */
@@ -1789,3 +2056,87 @@ form button {
 form button:hover {
     background-color: #c0c0c0; /* Gouden achtergrondkleur van de knop bij hover */
 }
+
+
+
+.rev-section {
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1100px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: rgb(50, 50, 50);
+    margin-bottom: .5rem;
+  }
+  
+  .note {
+    font-size: 1.1rem;
+    color: rgb(150, 150, 150);
+    font-style: italic;
+    color: #e69d00;
+  }
+  
+  .reviews {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column; /* Plaats de reviews onder elkaar */
+    align-items: center; /* Centreer de reviews horizontaal */
+  }
+  
+  .review {
+    width: 100%; /* Maak de reviewbox volledige breedte van de container */
+    margin-bottom: 2rem; /* Voeg wat ruimte toe onder elke review */
+  }
+  
+  .head-review {
+    margin: 1.75rem auto;
+    width: 150px;
+    height: 150px;
+  }
+  .review-img {
+    /* Voeg hier je unieke stijlen toe voor de afbeeldingen in de reviews */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .25);
+}
+  .body-review {
+    background-color: rgb(238, 238, 238);
+    padding: 2.5rem;
+    box-shadow: 2px 2px 10px 3px rgb(225, 225, 225);
+    text-align: left; /* Links uitlijnen van de reviewtekst */
+  }
+  
+  .name-review {
+    font-size: 1.5rem;
+    color: rgb(50, 50, 50);
+    margin-bottom: .25rem;
+  }
+  
+  .place-review {
+    color: red;
+    font-style: italic;
+  }
+  
+  .rating {
+    color: rgb(253, 180, 42);
+    margin: 1rem 0;
+  }
+  
+  .desc-review {
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    color: rgb(150, 150, 150);
+  }
+  
+  @media (max-width: 678px) {
+    .review {
+      margin-top: 1.5rem;
+    }
+  }
+  
