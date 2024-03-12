@@ -389,6 +389,7 @@ section#hero-section {
 
 .custom-button-container {
     margin-right: 15px; /* Voeg een rechtermarge toe om naar rechts te verschuiven */
+     text-decoration: none;
 }
 
 .new-image-container {
