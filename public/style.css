@@ -62,14 +62,11 @@ body {
     
     
     
-/* Media query voor grote schermen */
 @media only screen and (min-width: 768px) {
-    .img-container {
-        display: block; /* Toon de afbeelding op grote schermen */
-        width:160px;
+    .site-logo img {
+        width: 160px; /* Breedte voor grote schermen */
     }
 }
-
 
     /* Gewijzigde kleur van de navigatielinks */
     position: relative;
