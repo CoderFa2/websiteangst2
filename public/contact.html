@@ -40,24 +40,37 @@
         </div>
     </header>
   
-    
+ 
     <section id="contact" class="section">
         <div class="container">
             &nbsp;
             <h2>Contact</h2>
-            <p>Ik kom graag met jou in contact! Wil je voorgoed van je tandartsangst af? Wil je het vertrouwen krijgen om 2x per jaar de tandarts te bezoeken? Vind jij je gezondheid belangrijk? Gooi dan nu het roer voor altijd om! Neem je angst serieus, want dat doe ik ook, en maak die afspraak voor een gratis wake-upcall. ”GEWOON OMDAT JE HET MEER DAN WAARD BENT” Voor het maken van een afspraak kun je gebruik maken van de afsprakenagenda of contact opnemen via het contactformulier. Daarnaast kun je al je vragen via het vragenformulier (hier beneden) stellen. Tot snel!</p>
-            <h3>Stel hier jouw vraag aan mij</h3>
+            <p>Ik kom graag met jou in contact! Wil je voorgoed van je tandartsangst af? Wil je het vertrouwen krijgen om 2x per jaar de tandarts te bezoeken? Vind jij je gezondheid belangrijk? Gooi dan nu het roer voor altijd om! Neem je angst serieus, want dat doe ik ook, en maak die afspraak voor een gratis wake-upcall.</p>
+            <p>”GEWOON OMDAT JE HET MEER DAN WAARD BENT” </p>
+            <p>Voor het maken van een afspraak kun je gebruik maken van de afsprakenagenda of contact opnemen via het contactformulier. Daarnaast kun je al je vragen via het vragenformulier (hier beneden) stellen. Tot snel!</p>
+            &nbsp;
+            <h2>Stel hier jouw vraag aan mij</h2>
             &nbsp;
             <p>Wil jij graag tips, updates en andere handige informatie krijgen? Vergeet mij dan niet te volgen op mijn socials!</p>
             <form action="https://formspree.io/f/xpzgqwgd" method="POST">
                 <input type="text" name="first" placeholder="Voornaam" autocomplete="off" required>
                 <input type="text" name="last" placeholder="Achternaam" autocomplete="off" required>
                 <input type="email" name="email" placeholder="Email Adres" autocomplete="off" required>
-                <textarea rows="5" cols="60" name="message" placeholder="Typ text hier" autocomplete="off" required></textarea>
-                <button  class="cta-button pulse"  type= "submit">Verstuur</button>
+                <label for=" Op welke plek wilt u een afspraak inplannen?">Op welke plek wilt u een afspraak inplannen?</label>
+            <select id=" Op welke plek wilt u een afspraak inplannen?" name="Op welke plek wilt u een afspraak inplannen?" >
+                <option value="" selected disabled>Selecteer</option>
+                <option value="Op welke locatie">Op locatie</option>
+                <option value="Bij mij thuis">Bij mij thuis</option>
+                <option value="Online">Online</option>
+            </select>
+            <label for="Welke vraag/informatie wil je weten">Welke vraag/informatie wil je weten</label>
+            <textarea id="Welke vraag/informatie wil je weten" name="Welke vraag/informatie wil je weten" rows="4" required></textarea>
+            <button type="submit">Verstuur bericht</button>
             </form>
         </div>
     </section>
+    
+    
     
     
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
