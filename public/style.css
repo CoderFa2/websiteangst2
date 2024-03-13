@@ -70,19 +70,7 @@ body {
     }
 }
 
-/* Stijl voor kleine schermen */
-@media only screen and (max-width: 767px) {
-    .img-container {
-        width: 140px; /* Pas de breedte van de afbeelding aan op kleine schermen */
-        display: block; /* Toon de afbeelding op kleine schermen */
-    }
-}
-    
-    
-    
-    
-    
-    
+
     /* Gewijzigde kleur van de navigatielinks */
     position: relative;
     text-decoration: none;
