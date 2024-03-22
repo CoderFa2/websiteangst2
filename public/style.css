@@ -179,6 +179,10 @@ section#hero-section {
     position: relative;
 }
 
+.welcome-message {
+    white-space: nowrap; /* Voorkomt dat de tekst wordt afgebroken */
+    font-size: 26px; /* Pas de gewenste lettergrootte aan */
+}
 .welcome-message:before {
     content: '';
     position: absolute;
