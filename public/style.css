@@ -35,6 +35,26 @@ body {
     float: left;
     padding: 17px 0px;
 }
+
+.site-logo-container {
+    position: relative;
+}
+
+.text-under-logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #000;
+}
+
+.text-under-logo p {
+    font-size: 14px; /* Pas deze waarde aan naar jouw wens */
+    color: #000;
+}
+
+
 .site-logo a {
     color: #fff;
     text-decoration: none;
@@ -62,12 +82,12 @@ body {
     
     
     
-@media only screen and (min-width: 768px) {
-    .site-logo img {
-        width: 160px; /* Breedte voor grote schermen */
-    }
-}
-
+    
+    
+    
+    
+    
+    
     /* Gewijzigde kleur van de navigatielinks */
     position: relative;
     text-decoration: none;
@@ -111,6 +131,21 @@ body {
 }
 
 
+/* Media query voor grote schermen */
+@media only screen and (min-width: 768px) {
+    .img-container {
+        width: 160px;
+        display: block; /* Toon de afbeelding op grote schermen */
+    }
+}
+
+/* Stijl voor kleine schermen */
+@media only screen and (max-width: 767px) {
+    .img-container {
+        width: 140px; /* Pas de breedte van de afbeelding aan op kleine schermen */
+        display: block; /* Toon de afbeelding op kleine schermen */
+    }
+}
 section#hero-section {
     margin-bottom: 40px;
     width: 100%;
@@ -389,7 +424,7 @@ section#hero-section {
 
 .custom-button-container {
     margin-right: 15px; /* Voeg een rechtermarge toe om naar rechts te verschuiven */
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .new-image-container {
@@ -1223,7 +1258,7 @@ body {
 .section {
     padding: 40px 0; /* Verklein de padding boven en onder */
     margin-top: 0; /* Verwijder de bovenmarge van beide secties */
-    margin-bottom: 20px; /* Voeg een kleine onderste marge toe aan beide secties */
+    margin-bottom: 50px; /* Voeg een kleine onderste marge toe aan beide secties */
 }
 
 
@@ -1520,7 +1555,7 @@ p {
 .help-section h2::after {
     content: '';
     display: block;
-    width: 50px;
+    width: 60px;
     height: 2px;
     background-color: #e69d00;
     position: absolute;
@@ -1581,7 +1616,7 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .button:hover {
