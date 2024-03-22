@@ -227,11 +227,11 @@ section#hero-section {
     }
 }
 
-.hero2 h4 {
+.hero2 h3 {
     color: #FFBF00;
 }
 
-.hero2 h1 {
+.hero2 h4 {
     color: #FFBF00; /* Verander deze waarde naar de gewenste tekstkleur */
 }
 
@@ -241,6 +241,7 @@ section#hero-section {
 
 .hero2 p {
     color: #ffffff; /* Verander deze waarde naar de gewenste tekstkleur */
+    text-align: left;
 }
 
 /* Responsive css */
@@ -292,6 +293,11 @@ section#hero-section {
 #pricing-section:not(:last-child) {
     margin-bottom: 20px; /* Pas de onderste marge aan naar jouw voorkeur */
 }
+
+#tandartsangst-section .section-heading {
+    font-size: 28px; /* Grootte van de koptekst aanpassen */
+}
+
 
 #text-section-2 .custom-text-container {
     text-align: center;
@@ -1158,22 +1164,28 @@ body {
 }
 
 .coach-content {
-    text-align: center;
+    max-width: 800px; /* Optioneel: beperk de maximale breedte van de tekst voor een betere leesbaarheid */
+    margin-left: auto; /* Automatische marge aan de linkerkant om de tekst in het midden te plaatsen */
+    margin-right: auto; /* Automatische marge aan de rechterkant om de tekst in het midden te plaatsen */
+   
 }
 
 .coach-content h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
+    color: #333; /* Donkere tekstkleur */
+    font-size: 28px; /* Grootte van de koptekst aanpassen */
+    margin-bottom: 20px; /* Ruimte onder de koptekst */
 }
 
 .coach-content p {
-    font-size: 18px;
-    color: #333;
+    text-align: justify; /* Uitlijning van de tekst */
+    color: #333; /* Donkere tekstkleur */
+    font-size: 18px; /* Grootte van de tekst aanpassen */
+    line-height: 1.6; /* Regelafstand voor betere leesbaarheid */
     max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
     margin-left: auto; /* Plaats de paragrafen in het midden van de container */
     margin-right: auto; /* Plaats de paragrafen in het midden van de container */
 }
+
 
 .coach-content h2::before {
     content: "";
