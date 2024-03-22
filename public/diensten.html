@@ -192,7 +192,23 @@ menuItems.forEach(function(item) {
         // Verwijder de "active" klasse van alle andere menu-items
         item.classList.remove('active');
     }
+});// Vind het video-element
+var video = document.getElementById('videoPlayer');
+
+// Voeg een event listener toe voor het klikken op het video-element
+video.addEventListener('click', function() {
+    // Controleer of het video-element is gepauzeerd
+    if (video.paused) {
+        // Start de video als deze is gepauzeerd
+        video.play();
+    } else {
+        // Pauzeer de video als deze wordt afgespeeld
+        video.pause();
+    }
 });
+
+
+        
     </script>
     <script type="text/javascript" src="app.js"></script>
     <div class="map-container">
