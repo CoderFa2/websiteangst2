@@ -2038,7 +2038,7 @@ button[type="submit"]:hover {
 }
 
 #contact.container h2 {
-    font-size: 25px; /* Pas de grootte van de h2 aan */
+    font-size: 24px; /* Pas de grootte van de h2 aan */
     margin-top: -20px;
 }
 .container p {
