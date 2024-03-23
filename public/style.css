@@ -2037,11 +2037,10 @@ button[type="submit"]:hover {
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
 
-.container h2 {
+#contact.container h2 {
     font-size: 25px; /* Pas de grootte van de h2 aan */
-    margin-top: 15px;
+    margin-top: -20px;
 }
-
 .container p {
     font-size: 16px; /* Pas de grootte van de alinea's aan */
     max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
