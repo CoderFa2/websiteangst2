@@ -179,10 +179,6 @@ section#hero-section {
     position: relative;
 }
 
-.welcome-message {
-    white-space: nowrap; /* Voorkomt dat de tekst wordt afgebroken */
-    font-size: 26px; /* Pas de gewenste lettergrootte aan */
-}
 .welcome-message:before {
     content: '';
     position: absolute;
@@ -234,6 +230,11 @@ section#hero-section {
 .hero2 h3 {
     color: #FFBF00;
 }
+.welcome-message {
+    white-space: nowrap; /* Voorkomt dat de tekst wordt afgebroken */
+    font-size: 26px; /* Pas de gewenste lettergrootte aan */
+}
+
 
 .hero2 h4 {
     color: #FFBF00; /* Verander deze waarde naar de gewenste tekstkleur */
@@ -777,6 +778,7 @@ section#hero-section {
     padding: 50px 0;
     margin-bottom: 0px; /* Voeg 50px margin toe onder elke sectie */
     text-align: center;
+  
 }
 
 .help-box {
@@ -818,6 +820,7 @@ section#hero-section {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    
 }
 
 
@@ -826,6 +829,7 @@ section#hero-section {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    margin-top: -25px;
 }
 
 .specialized-section p {
@@ -844,7 +848,7 @@ section#hero-section {
 #tandartsangst-section .section-heading::after {
     content: '';
     display: block;
-    width: 100px;
+    width: 50px;
     height: 2px;
     background-color: #e69d00;
     position: absolute;
@@ -891,7 +895,7 @@ section#hero-section {
         background-color: #e69d00;
         position: absolute;
         bottom: -10px;
-        left: 30%;
+        left: 50%;
         transform: translateX(-50%);
     }
     
@@ -1503,7 +1507,7 @@ p {
 .tula-section h2::after {
     content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
     display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 50px; /* Breedte van het pseudo-element */
+    width: 60px; /* Breedte van het pseudo-element */
     height: 2px; /* Hoogte van het pseudo-element */
     background-color: #e69d00; /* Gewenste kleur */
     position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
@@ -1568,27 +1572,33 @@ p {
     text-align: center;
 }
 
-.help-section h2::after {
+
+
+.help-section h2::after,
+.help-section .container h2::after {
+    /* Stijlregels voor het ::after pseudo-element */
     content: '';
-    display: block;
-    width: 60px;
+    position: absolute;
+    width: 50px; /* Pas de breedte aan */
     height: 2px;
     background-color: #e69d00;
-    position: absolute;
     bottom: -10px;
-    left: 0; /* Aanpassing: plaats het pseudo-element aan de linkerkant van de container */
-    right: 0; /* Aanpassing: strek het pseudo-element over de volledige breedte van de container */
-    margin: 0 auto; /* Aanpassing: centreer het pseudo-element horizontaal */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Mediaquery voor kleinere schermen */
 @media only screen and (max-width: 768px) {
-    .help-section h2::after {
-        width: 50px; /* Pas de breedte aan voor kleinere schermen */
+    .help-section h2::after,
+    .help-section .container h2::after {
+        width: 65px; /* Pas de breedte aan voor kleinere schermen */
         bottom: -8px; /* Pas de afstand tot de h2 aan voor kleinere schermen */
-        right: 60%; /* Pas de positie naar links aan voor kleinere schermen */
+        right: -20%; /* Verplaats het streepje meer naar links van het midden van de h2 */
+        transform: translateX(-50%); /* Centreer het streepje horizontaal */
     }
 }
+
+
 .help-section .help-text {
     margin-top: 20px; /* Voeg bovenmarge toe om ruimte te creëren tussen h2 en p */
 }
@@ -2028,11 +2038,11 @@ button[type="submit"]:hover {
 #contact h2::after {
     content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
     display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 100px; /* Breedte van het pseudo-element */
+    width: 50px; /* Breedte van het pseudo-element */
     height: 2px; /* Hoogte van het pseudo-element */
     background-color: #e69d00; /* Gewenste kleur */
     position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
-    bottom: -20px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    bottom: -5px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
@@ -2041,6 +2051,7 @@ button[type="submit"]:hover {
     font-size: 25px; /* Pas de grootte van de h2 aan */
     margin-top: -20px;
 }
+
 
 .container p {
     font-size: 16px; /* Pas de grootte van de alinea's aan */
