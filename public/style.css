@@ -2039,7 +2039,7 @@ button[type="submit"]:hover {
 
 .container h2 {
     font-size: 25px; /* Pas de grootte van de h2 aan */
-    margin-top: 15px;
+    margin-top: -20px;
 }
 
 .container p {
