@@ -35,6 +35,26 @@ body {
     float: left;
     padding: 17px 0px;
 }
+
+.site-logo-container {
+    position: relative;
+}
+
+.text-under-logo {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #000;
+}
+
+.text-under-logo p {
+    font-size: 14px; /* Pas deze waarde aan naar jouw wens */
+    color: #000;
+}
+
+
 .site-logo a {
     color: #fff;
     text-decoration: none;
@@ -62,12 +82,12 @@ body {
     
     
     
-@media only screen and (min-width: 768px) {
-    .site-logo img {
-        width: 160px; /* Breedte voor grote schermen */
-    }
-}
-
+    
+    
+    
+    
+    
+    
     /* Gewijzigde kleur van de navigatielinks */
     position: relative;
     text-decoration: none;
@@ -111,6 +131,21 @@ body {
 }
 
 
+/* Media query voor grote schermen */
+@media only screen and (min-width: 768px) {
+    .img-container {
+        width: 160px;
+        display: block; /* Toon de afbeelding op grote schermen */
+    }
+}
+
+/* Stijl voor kleine schermen */
+@media only screen and (max-width: 767px) {
+    .img-container {
+        width: 140px; /* Pas de breedte van de afbeelding aan op kleine schermen */
+        display: block; /* Toon de afbeelding op kleine schermen */
+    }
+}
 section#hero-section {
     margin-bottom: 40px;
     width: 100%;
@@ -195,8 +230,13 @@ section#hero-section {
 .hero2 h3 {
     color: #FFBF00;
 }
+.welcome-message {
+    white-space: nowrap; /* Voorkomt dat de tekst wordt afgebroken */
+    font-size: 26px; /* Pas de gewenste lettergrootte aan */
+}
 
-.hero2 h1 {
+
+.hero2 h4 {
     color: #FFBF00; /* Verander deze waarde naar de gewenste tekstkleur */
 }
 
@@ -206,6 +246,7 @@ section#hero-section {
 
 .hero2 p {
     color: #ffffff; /* Verander deze waarde naar de gewenste tekstkleur */
+    text-align: left;
 }
 
 /* Responsive css */
@@ -257,6 +298,11 @@ section#hero-section {
 #pricing-section:not(:last-child) {
     margin-bottom: 20px; /* Pas de onderste marge aan naar jouw voorkeur */
 }
+
+#tandartsangst-section .section-heading {
+    font-size: 28px; /* Grootte van de koptekst aanpassen */
+}
+
 
 #text-section-2 .custom-text-container {
     text-align: center;
@@ -389,7 +435,7 @@ section#hero-section {
 
 .custom-button-container {
     margin-right: 15px; /* Voeg een rechtermarge toe om naar rechts te verschuiven */
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .new-image-container {
@@ -732,6 +778,7 @@ section#hero-section {
     padding: 50px 0;
     margin-bottom: 0px; /* Voeg 50px margin toe onder elke sectie */
     text-align: center;
+  
 }
 
 .help-box {
@@ -773,6 +820,7 @@ section#hero-section {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    
 }
 
 
@@ -781,6 +829,7 @@ section#hero-section {
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
+    margin-top: -25px;
 }
 
 .specialized-section p {
@@ -799,7 +848,7 @@ section#hero-section {
 #tandartsangst-section .section-heading::after {
     content: '';
     display: block;
-    width: 100px;
+    width: 50px;
     height: 2px;
     background-color: #e69d00;
     position: absolute;
@@ -846,7 +895,7 @@ section#hero-section {
         background-color: #e69d00;
         position: absolute;
         bottom: -10px;
-        left: 30%;
+        left: 50%;
         transform: translateX(-50%);
     }
     
@@ -1123,22 +1172,28 @@ body {
 }
 
 .coach-content {
-    text-align: center;
+    max-width: 800px; /* Optioneel: beperk de maximale breedte van de tekst voor een betere leesbaarheid */
+    margin-left: auto; /* Automatische marge aan de linkerkant om de tekst in het midden te plaatsen */
+    margin-right: auto; /* Automatische marge aan de rechterkant om de tekst in het midden te plaatsen */
+   
 }
 
 .coach-content h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
+    color: #333; /* Donkere tekstkleur */
+    font-size: 28px; /* Grootte van de koptekst aanpassen */
+    margin-bottom: 20px; /* Ruimte onder de koptekst */
 }
 
 .coach-content p {
-    font-size: 18px;
-    color: #333;
+    text-align: justify; /* Uitlijning van de tekst */
+    color: #333; /* Donkere tekstkleur */
+    font-size: 18px; /* Grootte van de tekst aanpassen */
+    line-height: 1.6; /* Regelafstand voor betere leesbaarheid */
     max-width: 600px; /* Stel een maximale breedte in voor de paragrafen */
     margin-left: auto; /* Plaats de paragrafen in het midden van de container */
     margin-right: auto; /* Plaats de paragrafen in het midden van de container */
 }
+
 
 .coach-content h2::before {
     content: "";
@@ -1223,7 +1278,7 @@ body {
 .section {
     padding: 40px 0; /* Verklein de padding boven en onder */
     margin-top: 0; /* Verwijder de bovenmarge van beide secties */
-    margin-bottom: 20px; /* Voeg een kleine onderste marge toe aan beide secties */
+    margin-bottom: 50px; /* Voeg een kleine onderste marge toe aan beide secties */
 }
 
 
@@ -1452,7 +1507,7 @@ p {
 .tula-section h2::after {
     content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
     display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 50px; /* Breedte van het pseudo-element */
+    width: 60px; /* Breedte van het pseudo-element */
     height: 2px; /* Hoogte van het pseudo-element */
     background-color: #e69d00; /* Gewenste kleur */
     position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
@@ -1517,27 +1572,33 @@ p {
     text-align: center;
 }
 
-.help-section h2::after {
+
+
+.help-section h2::after,
+.help-section .container h2::after {
+    /* Stijlregels voor het ::after pseudo-element */
     content: '';
-    display: block;
-    width: 50px;
+    position: absolute;
+    width: 50px; /* Pas de breedte aan */
     height: 2px;
     background-color: #e69d00;
-    position: absolute;
     bottom: -10px;
-    left: 0; /* Aanpassing: plaats het pseudo-element aan de linkerkant van de container */
-    right: 0; /* Aanpassing: strek het pseudo-element over de volledige breedte van de container */
-    margin: 0 auto; /* Aanpassing: centreer het pseudo-element horizontaal */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Mediaquery voor kleinere schermen */
 @media only screen and (max-width: 768px) {
-    .help-section h2::after {
-        width: 50px; /* Pas de breedte aan voor kleinere schermen */
+    .help-section h2::after,
+    .help-section .container h2::after {
+        width: 65px; /* Pas de breedte aan voor kleinere schermen */
         bottom: -8px; /* Pas de afstand tot de h2 aan voor kleinere schermen */
-        right: 60%; /* Pas de positie naar links aan voor kleinere schermen */
+        right: -20%; /* Verplaats het streepje meer naar links van het midden van de h2 */
+        transform: translateX(-50%); /* Centreer het streepje horizontaal */
     }
 }
+
+
 .help-section .help-text {
     margin-top: 20px; /* Voeg bovenmarge toe om ruimte te creëren tussen h2 en p */
 }
@@ -1581,7 +1642,7 @@ p {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .button:hover {
@@ -1977,19 +2038,20 @@ button[type="submit"]:hover {
 #contact h2::after {
     content: ''; /* Zorgt ervoor dat het pseudo-element inhoud heeft */
     display: block; /* Zorgt ervoor dat het pseudo-element een blokelement is */
-    width: 100px; /* Breedte van het pseudo-element */
+    width: 50px; /* Breedte van het pseudo-element */
     height: 2px; /* Hoogte van het pseudo-element */
     background-color: #e69d00; /* Gewenste kleur */
     position: absolute; /* Zorg ervoor dat het pseudo-element absoluut is gepositioneerd */
-    bottom: -20px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
+    bottom: -5px; /* Plaats het pseudo-element 10 pixels onder de onderkant van de h2 */
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
 
-.container h2 {
+#contact .container h2 {
     font-size: 25px; /* Pas de grootte van de h2 aan */
-    margin-top: 15px;
+    margin-top: -20px;
 }
+
 
 .container p {
     font-size: 16px; /* Pas de grootte van de alinea's aan */

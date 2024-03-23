@@ -41,41 +41,45 @@
     </header>
    
     <div id="bannerimage"></div>
-
-    <section id="text-section-2" class="professionele-sectie">
+  <section id="text-section-2" class="professionele-sectie">
         <div class="custom-text-container">
-            <h2 class="section-heading">Waarom zijn mensen bang voor de tandarts?</h2>
+            <h2 class="section-heading">Zonder angst naar de tandarts met het A.N.G.S.T.-Parcour</h2>
             &nbsp;
             <div class="text-content">
-                <p>Recent onderzoek wijst uit dat ongeveer een kwart van de Nederlanders angst ervaart bij het vooruitzicht van een tandartsafspraak.</p>
-                <p>Van deze groep vermijdt ongeveer 800.000 mensen regelmatige tandartsbezoeken uit angst en ontwikkelt zelfs een tandartsfobie.</p>
+                <p>Hoe fijn is het als jij of jouw kind weer ontspannen met vertrouwen naar de tandarts durf te gaan?</p>
+                <p>Aan de hand van mijn bewezen methodiek het A.N.G.S.T.-parcour gaan we samen
+                    hiervoor zorgen, zodat jij of jouw kind straks weer zonder angst naar de tandarts durft te
+                    gaan.</p>
             </div>
         </div>
-    <section id="text-section">
-        <h2>Angst voor de tandarts bij volwassenen</h2>
-        &nbsp;
-        <div class="text-content">
-            <ul>
-                <li>1 op de 10 mensen heeft angst voor de tandarts.</li>
-                <li>1 op de 25 mensen heeft een trauma voor de tandarts.</li>
-                <li>Angst voor de tandarts is te verhelpen met therapie.</li>
-            </ul>
-            <p class="info-text">Klik op het linkje hieronder voor meer informatie</p>
-            <div class="new-image-container">
-                <img src="images/curve-down-arrow.png" width="40" alt="Nieuwe afbeelding">
+        <section id="angst-parcours-section" class="infographic-section">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <!-- Tekstuele inhoud -->
+                        <div class="video-container">
+                        
+                            <iframe width="560" height="315" src="images/Revision.mp4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        
+                        </div>
+                    <div class="infographic-image">
+                        <img src="images/a.n.g.s.t. parcours (1).png">
+                        <!-- Voeg hier de afbeelding van de infographic toe -->
+                        <!-- Bijvoorbeeld: -->
+                        <!-- <img src="path/to/infographic.jpg" alt="Infographic"> -->
+                    </div>
+                </div>
             </div>
-        <div class="custom-button-container">
-            <a href="angstparcour.html" class="custom-button">Ga naar het ANGST - parcour</a>
-        </div>        
-    </div>
-    </section>
+        </section>
+        
     
     <section id="causes-section" class="professional-section">
         <div class="custom-text-container">
-            <h2 class="section-heading">Waaruit kan tandartsangst ontstaan?</h2>
+            <h2 class="section-heading">Samen pakken we de oorzaak aan</h2>
             &nbsp;
             <div class="text-content">
-                <p>Angst voor de tandarts kan om verschillende redenen ontstaan. Het is belangrijk om deze oorzaken te begrijpen om passende zorg te bieden. Hier zijn enkele mogelijke oorzaken:</p>
+                <p>Angst voor de tandarts kan om verschillende redenen ontstaan. Het is belangrijk om deze oorzaken te begrijpen om passende zorg te bieden. Een oorzaak kan zijn:</p>
                 <ul>
                     <li>Slechte ervaringen uit het verleden</li>
                     <li>Onderliggende trauma</li>
@@ -83,34 +87,13 @@
                     <li>Angst dat de tandarts een zenuw of uw tong doorboort</li>
                     <li>Algemene angststoornissen</li>
                 </ul>
+                <p>Maar mogelijk kan het bij jou een andere oorzaak hebben.</p>
+                <p>Samen kijken we naar de
+                    onderliggende oorzaak en passen we de coaching hierop aan.</p>
             </div>
         </div>
     </section>
 
-    <div class="container">
-        <section id="custom-section" class="custom-sectie">
-            <div class="image-container">
-                <img src="images/b8708487-9833-499b-8b43-19e21ba35740 - kopie.jpg" alt="Beschrijvende tekst van je afbeelding">
-            </div>
-            <div class="custom-text-container">
-                <h2 class="section-heading">De Nadelige Gevolgen</h2>
-                &nbsp;
-                <div class="impact-item">
-                    <h3>Slechte ervaringen uit het verleden</h3>
-                    <p>Langere en duurdere behandelingen zijn vaak nodig als gevolg van verwaarlozing.</p>
-                </div>
-                <!-- Voeg hier andere impact-items toe -->
-                <div class="impact-item"> <!-- Impact-item container toevoegen -->
-                    <h3>Infectie/Ontsteking van het Tandvlees</h3>
-                    <p>Onderzoek toont aan dat ontstekingen kunnen leiden tot ernstige aandoeningen zoals gingivitis en parodontitis. In extreme gevallen kan dit zelfs leiden tot hart- en herseninfarcten.</p>
-                </div>
-                <div class="impact-item"> <!-- Impact-item container toevoegen -->
-                    <h3>Slechte Adem</h3>
-                    <p>Sociale isolatie kan het gevolg zijn van onzekerheid door een slechte adem, waarbij zelfvertrouwen afneemt.</p>
-                </div>
-            </div>
-        </section>
-    </div>
     <section id="how-it-works-section" class="creative-section">
         <div class="custom-text-container">
             <h3 class="section-heading">Hoe ga ik te werk? </h3>
@@ -209,7 +192,23 @@ menuItems.forEach(function(item) {
         // Verwijder de "active" klasse van alle andere menu-items
         item.classList.remove('active');
     }
+});// Vind het video-element
+var video = document.getElementById('videoPlayer');
+
+// Voeg een event listener toe voor het klikken op het video-element
+video.addEventListener('click', function() {
+    // Controleer of het video-element is gepauzeerd
+    if (video.paused) {
+        // Start de video als deze is gepauzeerd
+        video.play();
+    } else {
+        // Pauzeer de video als deze wordt afgespeeld
+        video.pause();
+    }
 });
+
+
+        
     </script>
     <script type="text/javascript" src="app.js"></script>
     <div class="map-container">
@@ -239,10 +238,10 @@ menuItems.forEach(function(item) {
     
         <section class="container">
             <div class="footer-section">
-                <div class="footer-logo">Coachpraktijktula</div>
+                <div class="footer-logo">Angstcoachpraktijktula</div>
             </div>
             <div class="footer-section">
-                <div class="follow-text">Volg Coachpraktijktula</div>
+                <div class="follow-text">Volg Angstcoachpraktijktula</div>
                 &nbsp;
                 <div class="social-icons">
                     <img src="images/LinkedIn-80x80.png" width="30">
