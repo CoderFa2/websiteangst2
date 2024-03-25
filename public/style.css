@@ -831,6 +831,12 @@ section#hero-section {
     margin-bottom: 20px;
     margin-top: -25px;
 }
+.section-heading {
+    font-size: 24px; /* Grootte van de tekst */
+    color: #333; /* Tekstkleur */
+    margin-bottom: 20px; /* Onderste marge */
+    /* Eventuele andere stijlen die je wilt toepassen */
+}
 
 .specialized-section p {
     font-size: 18px;
