@@ -300,7 +300,7 @@ section#hero-section {
 }
 
 #tandartsangst-section .section-heading {
-    font-size: 28px; /* Grootte van de koptekst aanpassen */
+    font-size: 24px; /* Grootte van de koptekst aanpassen */
 }
 
 
@@ -831,6 +831,7 @@ section#hero-section {
     margin-bottom: 20px;
     margin-top: -25px;
 }
+
 
 .specialized-section p {
     font-size: 18px;
