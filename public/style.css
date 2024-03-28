@@ -134,7 +134,7 @@ body {
 /* Mediaquery voor laptops met een breedte tussen 992px en 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
     .site-logo img {
-        max-width: 230px; /* Pas de maximale breedte van het logo aan op laptops met grotere schermen */
+        max-width: 250px; /* Pas de maximale breedte van het logo aan op laptops met grotere schermen */
         height: auto; /* Zorg ervoor dat de hoogte proportioneel wordt aangepast */
     }
 }
@@ -142,7 +142,7 @@ body {
 /* Mediaquery voor laptops met een breedte van 1200px of groter */
 @media (min-width: 1200px) {
     .site-logo img {
-        max-width: 230px; /* Pas de maximale breedte van het logo aan op laptops met nog grotere schermen */
+        max-width: 250px; /* Pas de maximale breedte van het logo aan op laptops met nog grotere schermen */
         height: auto; /* Zorg ervoor dat de hoogte proportioneel wordt aangepast */
     }
 }
