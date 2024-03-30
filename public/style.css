@@ -134,7 +134,7 @@ body {
 /* Mediaquery voor laptops met een breedte tussen 992px en 1199px */
 @media (min-width: 992px) and (max-width: 1199px) {
     .site-logo img {
-        max-width: 240px; /* Pas de maximale breedte van het logo aan op laptops met grotere schermen */
+        max-width: 230px; /* Pas de maximale breedte van het logo aan op laptops met grotere schermen */
         height: auto; /* Zorg ervoor dat de hoogte proportioneel wordt aangepast */
     }
 }
