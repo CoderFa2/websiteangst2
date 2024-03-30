@@ -142,7 +142,7 @@ body {
 /* Mediaquery voor laptops met een breedte van 1200px of groter */
 @media (min-width: 1200px) {
     .site-logo img {
-        max-width: 300px; /* Pas de maximale breedte van het logo aan op laptops met nog grotere schermen */
+        max-width: 270px; /* Pas de maximale breedte van het logo aan op laptops met nog grotere schermen */
         height: auto; /* Zorg ervoor dat de hoogte proportioneel wordt aangepast */
     }
 }
@@ -152,7 +152,7 @@ body {
 /* Stijl voor kleine schermen */
 @media only screen and (max-width: 767px) {
     .site-logo img{
-        width: 200px; /* Pas de breedte van de afbeelding aan op kleine schermen */
+        width: 180px; /* Pas de breedte van de afbeelding aan op kleine schermen */
         display: block; /* Toon de afbeelding op kleine schermen */
     }
 }
