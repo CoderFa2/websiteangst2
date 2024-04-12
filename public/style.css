@@ -1025,7 +1025,7 @@ body {
 
 .location-option .video-frame {
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     border: 2px solid #000;
     border-radius: 10px;
     overflow: hidden;
@@ -1191,7 +1191,7 @@ body {
 
 .coach-content h2 {
     color: #333; /* Donkere tekstkleur */
-    font-size: 28px; /* Grootte van de koptekst aanpassen */
+    font-size: 24px; /* Grootte van de koptekst aanpassen */
     margin-bottom: 20px; /* Ruimte onder de koptekst */
 }
 
@@ -1872,6 +1872,10 @@ p {
     font-size: 16px; /* Pas de lettergrootte aan indien nodig */
 }
 
+.contact-info h2 {
+    font-size: 24px;  /* Kleinere fontgrootte voor de h2 koppen */
+}
+
 @media only screen and (min-width: 768px) {
     .contact-info {
         width: calc(50% - 20px); /* 50% breedte minus padding voor grotere schermen */
@@ -1885,7 +1889,7 @@ p {
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 5px;
     align-items: center; /* Verticaal centreren */
 }
 .nav-links a {
@@ -1914,6 +1918,26 @@ p {
     height: 30px;
     margin: 0 5px;
 }
+
+.footer-section, .contact-info, .nav-links, .madeby, .pdf-link {
+    text-align: center;
+}
+
+.map-container, .social-icons {
+    display: flex;
+    justify-content: center; /* Centreren van flex-items */
+}
+
+.nav-links {
+    justify-content: center; /* Zorgt ervoor dat navigatielinks in het midden van de container staan */
+}
+
+.social-icons img {
+    margin: 0 10px; /* Standaardiseer marge rond sociale media iconen */
+}
+
+
+
 
 
 .ebook-link {
@@ -1946,8 +1970,14 @@ p {
     text-decoration: underline; /* Onderstreep de link bij hover */
 }
 
-.madeby {
-    text-align: center;
+.madeby a {
+    color: #e69d00; /* Oranje kleur */
+    text-decoration: none; /* Optioneel: verwijdert onderstreping indien gewenst */
+    transition: color 0.3s ease; /* Soepele kleurverandering bij hover */
+}
+
+.madeby a:hover {
+    color: #cc8400; /* Een iets donkerdere oranje kleur voor hover effect */
 }
 
 /* Stijl voor de titel */
@@ -2057,6 +2087,27 @@ button[type="submit"]:hover {
     left: 50%; /* Plaats het pseudo-element in het midden van de h2 */
     transform: translateX(-50%); /* Verschuif het pseudo-element horizontaal met de helft van zijn eigen breedte naar links */
 }
+
+#contact .container h2 {
+    font-size: 25px; /* Pas de grootte van de h2 aan */
+    margin-top: -20px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-text .space {
+    height: 40px; /* Voeg een flexibele hoogte toe voor de ruimte */
+}
+
+.contact-text p, .contact-text h2 {
+    width: 100%; /* Zorgt ervoor dat de paragraaf en de kop de volle breedte van de container innemen */
+    text-align: center; /* Centreert de tekst */
+}
+
 
 #contact .container h2 {
     font-size: 25px; /* Pas de grootte van de h2 aan */
