@@ -2027,7 +2027,7 @@ button[type="submit"]:hover {
 
 /* Stijl voor de container van de contacttekst */
 .contact-container {
-    background-color: #f9f9f9; /* Achtergrondkleur van de box */
+    background-color: #e69d00; /* Achtergrondkleur van de box */
     border: 1px solid #ddd; /* Rand rondom de box */
     border-radius: 10px; /* Afronding van de hoeken van de box */
     padding: 20px; /* Binnenste vulling van de box */
