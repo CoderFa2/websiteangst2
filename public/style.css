@@ -772,7 +772,13 @@ section#hero-section {
 #pricing-section .cta-button:hover {
     background-color: #e69d00; /* Achtergrondkleur van de knop bij hover */
 }
+.amount {  /* Dit zal de stijl toepassen op alle elementen met klasse `amount` op de hele pagina */
+    font-size: 18px;
+}
 
+.currency {
+    font-size: 18px;
+}
 #pricing-section .text-content {
     display: flex; /* Gebruik flexbox */
     flex-direction: column; /* Zet de richting van de flexcontainer naar kolom */
