@@ -1970,8 +1970,14 @@ p {
     text-decoration: underline; /* Onderstreep de link bij hover */
 }
 
-.madeby {
-    text-align: center;
+.madeby a {
+    color: #e69d00; /* Oranje kleur */
+    text-decoration: none; /* Optioneel: verwijdert onderstreping indien gewenst */
+    transition: color 0.3s ease; /* Soepele kleurverandering bij hover */
+}
+
+.madeby a:hover {
+    color: #cc8400; /* Een iets donkerdere oranje kleur voor hover effect */
 }
 
 /* Stijl voor de titel */
