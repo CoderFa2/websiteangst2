@@ -1,0 +1,14 @@
+# Allows all web crawlers to access everything
+User-agent: *
+Disallow:
+
+# To block certain directories for all web crawlers
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /junk/
+
+# Specific instructions for a specific web crawler
+User-agent: Googlebot
+Disallow: /no-index/
+
