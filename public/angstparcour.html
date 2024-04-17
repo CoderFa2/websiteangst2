@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CoachpraktijkTula Nooit Meer Bang Voor De Tandarts.</title>
+    <title>A.N.G.S.T. Parcours | Overwin Angst voor de Tandarts</title>
+    <meta name="description" content="Ontdek het A.N.G.S.T. parcours bij Coachpraktijk Tula en leer hoe je zonder angst naar de tandarts kunt gaan. Bekijk onze infographic en video voor meer informatie.">
+    <link rel="canonical" href="https://example.com/path/to/page" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-
-    <!-- font awesome cdn -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -19,15 +17,14 @@
     <header class="header-area">
         <div class="header-container">
             <div class="site-logo">
-               <a href="images/Tula_logo-1-scaled.jpg" >
-                        <img src="images/Tula_logo-1-scaled.jpg" alt="Logo" >
-                    </a>
+                <a href="index.html">
+                    <img src="images/Tula_logo-1-scaled.jpg" alt="Logo van Coachpraktijk Tula">
+                </a>
             </div>
-            
             <div class="mobile-nav">
                 <i class="fas fa-bars"></i>
             </div>
-            <div class="site-nav-menu">
+            <nav class="site-nav-menu">
                 <ul class="primary-menu">
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="diensten.html">Diensten</a></li>
@@ -37,113 +34,55 @@
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </header>
-  
-    <section id="angst-parcours-section" class="infographic-section">
-        <div class="container">
-            <h2>Ontdek het A.N.G.S.T. - parcours</h2>
-            <p>Deze infographic visualiseert het A.N.G.S.T. - parcours, waardoor jij straks zonder angst naar de tandarts durft te gaan:</p>
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <!-- Tekstuele inhoud -->
+    <main>
+        <section id="angst-parcours-section" class="infographic-section">
+            <div class="container">
+                <h2>Ontdek het A.N.G.S.T. parcours</h2>
+                <p>Deze infographic visualiseert het A.N.G.S.T. parcours, waardoor jij straks zonder angst naar de tandarts durft te gaan:</p>
+                <div class="content-wrapper">
                     <div class="video-container">
-                    
                         <iframe width="560" height="315" src="images/Revision.mp4" frameborder="0" allowfullscreen></iframe>
                     </div>
-                    
+                    <div class="infographic-image">
+                        <img src="images/a.n.g.s.t. parcours (1).png" alt="Infographic van het A.N.G.S.T. parcours">
                     </div>
-                <div class="infographic-image">
-                    <img src="images/a.n.g.s.t. parcours (1).png">
-                    <!-- Voeg hier de afbeelding van de infographic toe -->
-                    <!-- Bijvoorbeeld: -->
-                    <!-- <img src="path/to/infographic.jpg" alt="Infographic"> -->
                 </div>
             </div>
-        </div>
-    </section>
-    
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script>
-$(document).ready(function(){
-  $(".mobile-nav i").click(function(){
-      $(".site-nav-menu").toggleClass("mobile-menu");
-  });
-});
-
-// Haal de huidige paginalocatie op
-var currentPage = window.location.pathname;
-
-// Selecteer alle menu-items
-var menuItems = document.querySelectorAll('.primary-menu li a');
-
-// Loop door alle menu-items
-menuItems.forEach(function(item) {
-    // Controleer of de href van het menu-item overeenkomt met de huidige paginalocatie
-    if (item.getAttribute('href') === currentPage) {
-        // Voeg de "active" klasse toe aan het overeenkomstige menu-item
-        item.classList.add('active');
-    } else {
-        // Verwijder de "active" klasse van alle andere menu-items
-        item.classList.remove('active');
-    }
-});
-    </script>
-    <script type="text/javascript" src="app.js"></script>
-    <div class="map-container">
-        <!-- Plak hier de gegenereerde HTML-code van Google Maps -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d308376.2217326769!2d5.027113!3d52.854993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c8b47638f759cf%3A0xd7c12add2218a118!2sLoggersplein%201%2C%201771%20CE%20Wieringerwerf%2C%20Nederland!5e0!3m2!1snl!2sus!4v1706962691431!5m2!1snl!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    
+        </section>
+    </main>
     <footer>
         <section id="contact-section" class="container">
             <div class="contact-info">
                 <h2>Contactgegevens</h2>
                 <p>Email: Coachpraktijktula@gmail.com</p>
                 <p>Telefoon: 06 27136222</p>
-    
-                <!-- Voeg hier de navigatielinks toe -->
                 <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="over.html">Over</a></li>
-                <li><a href="diensten.html">Diensten</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="review.html">Reviews</a></li>
-                <li><a href="location.html">Location</a></li>
-                <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="over.html">Over</a></li>
+                    <li><a href="diensten.html">Diensten</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </div>
         </section>
-    
-        <section class="container">
-            <div class="footer-section">
-             
+        <div class="footer-section">
+            <div class="follow-text">Volg Coachpraktijktula op sociale media</div>
+            <div class="social-icons">
+                <img src="images/LinkedIn-80x80.png" width="30">
+                <img src="images/Facebook-80x80.png" width="30">
             </div>
-            <div class="footer-section">
-          <div class="follow-text">Volg mij op de socials</div>
-                &nbsp;
-                <div class="social-icons">
-                    <img src="images/LinkedIn-80x80.png" width="30">
-                    <img src="images/Facebook-80x80.png" width="30">
-                    <!-- Voeg hier je sociale media-pictogrammen toe -->
-                </div>
-            </div>
-        </section>
-    
-      <div class="madeby">
+        </div>
+        <div class="madeby">
             <p>Gemaakt door <a href="https://webdevagency.nl/" target="_blank">Web Dev Agency</a></p>
         </div>
-        
-        
-        <!-- Link naar het PDF-bestand -->
         <div class="pdf-link">
-            <p><a href="images/Algemene-Voorwaarden-Coachpraktijktula-9.4.23.pdf" target="_blank">Bekijk de
-                 algemene voorwaarden</a></p>
+            <p><a href="images/Algemene-Voorwaarden-Coachpraktijktula-9.4.23.pdf" target="_blank">Bekijk de algemene voorwaarden</a></p>
         </div>
     </footer>
-    
 </body>
 </html>
