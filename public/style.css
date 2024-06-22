@@ -1815,7 +1815,7 @@ p {
 .back-button {
     position:absolute;
     left: 40%;
-    bottom: -1100px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
+    bottom: 100px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
 /* Mediaquery voor kleinere schermen */
 @media screen and (max-width: 768px) {
     bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
@@ -1835,7 +1835,7 @@ p {
 
 @media screen and (max-width: 768px) {
     .back-button {
-        bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
+        bottom: 100px; /* Pas de positie aan voor kleinere schermen */
         left: 30%;
     }
 }
