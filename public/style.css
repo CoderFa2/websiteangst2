@@ -1836,15 +1836,30 @@ p {
     text-decoration: underline;
 }
 
+.back-button a {
+    text-decoration: none;
+    color: #e69d00;
+    font-size: 16px;
+}
+
+.back-button a:hover {
+    text-decoration: underline;
+}
+
 .back-button-2 {
-    position:absolute;
+    position: absolute;
     left: 40%;
     bottom: -600px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
+}
+
 /* Mediaquery voor kleinere schermen */
 @media screen and (max-width: 768px) {
-    bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
-    left: 30%;
+    .back-button-2 {
+        bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
+        left: 30%;
+    }
 }
+
 .back-button-2 a {
     text-decoration: none;
     color: #e69d00;
@@ -1854,6 +1869,8 @@ p {
 .back-button-2 a:hover {
     text-decoration: underline;
 }
+
+
 }
 .footer-section {
     background-color: #ffffff;
