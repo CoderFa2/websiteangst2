@@ -1754,7 +1754,7 @@ p {
     padding: 20px;
 }
 .blog-post {
-    margin-bottom: 380px; /* Pas de onderste marge aan om de ruimte tussen blogposts te bepalen */
+    margin-bottom: 80px; /* Pas de onderste marge aan om de ruimte tussen blogposts te bepalen */
     border-bottom: 1px solid #ddd; /* Toevoegen van een subtiele scheidingslijn tussen blogposts */
     padding-bottom: 20px; /* Ruimte onderaan elke blogpost */
 }
