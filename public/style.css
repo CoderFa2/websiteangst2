@@ -1812,68 +1812,6 @@ p {
 }
 
 
-.back-button {
-    position:absolute;
-    left: 40%;
-    bottom: 100px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
-/* Mediaquery voor kleinere schermen */
-@media screen and (max-width: 768px) {
-    bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
-    left: 30%;
-}
-
-}
-
-
-
-/* Stijlen voor de eerste back-button */
-.back-button {
-    position: absolute;
-    left: 40%;
-    bottom: -1100px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
-}
-
-@media screen and (max-width: 768px) {
-    .back-button {
-        bottom: 100px; /* Pas de positie aan voor kleinere schermen */
-        left: 30%;
-    }
-}
-
-.back-button a {
-    text-decoration: none;
-    color: #e69d00;
-    font-size: 16px;
-}
-
-.back-button a:hover {
-    text-decoration: underline;
-}
-
-/* Stijlen voor de return-button */
-.return-button {
-    position: absolute;
-    left: 40%;
-    bottom: -600px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
-}
-
-@media screen and (max-width: 768px) {
-    .return-button {
-        bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
-        left: 30%;
-    }
-}
-
-.return-button a {
-    text-decoration: none;
-    color: #e69d00;
-    font-size: 16px;
-}
-
-.return-button a:hover {
-    text-decoration: underline;
-}
-
 
 }
 .footer-section {
