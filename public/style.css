@@ -1839,7 +1839,7 @@ p {
 .back-button-2 {
     position:absolute;
     left: 40%;
-    bottom: 100px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
+    bottom: -600px; /* Verstelbare waarde om de afstand tot de onderkant van de blogpost-container te bepalen */
 /* Mediaquery voor kleinere schermen */
 @media screen and (max-width: 768px) {
     bottom: -1900px; /* Pas de positie aan voor kleinere schermen */
